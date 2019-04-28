@@ -224,8 +224,10 @@ ggplot() +
       fill = fill)
   ) +
   scale_fill_identity() +
-  labs(x = "Больше сток наносов ⟶️",
-       y = "Больше высота ⟶️") +
+  labs(x = paste0("Сток наносов ⟶️\nот ",round(range(quantiles_sy))[1],
+                  " до ", prettyNum(round(range(quantiles_sy))[2], big.mark = " "),
+                  " т/км"),
+       y = paste0("Высота ⟶️\nот 0 до 5642 мБС")) +
   # labs(x = "Higher SSY ⟶️",
   #      y = "Higher Elevation ⟶️") +
   theme_map() +
@@ -243,7 +245,7 @@ ggplot() +
 # Combine plots
 ggdraw() +
   draw_plot(map, 0, 0, 1, 1) +
-  draw_plot(legend, 0.06, 0.075, 0.3, 0.3) -> ssy_caucasus_bivariate
+  draw_plot(legend, 0.07, 0.075, 0.27, 0.27) -> ssy_caucasus_bivariate
 
 # SAVE -----------------------------------------------------------------------
 ggsave("figures/3-XX_ssy_caucasus_bivariate_ru.png",
