@@ -229,5 +229,5 @@ save(caucasus_kknn_validate, caucasus_krige_validate,
      file = "data/tidy/model_validate.Rdata")
 
 # Temporary data
-save(hc_raster,
+save(hc_raster, sy_h,
      file = "data/spatial/kknn-h_raster.Rdata")
