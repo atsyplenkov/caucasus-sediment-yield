@@ -231,3 +231,11 @@ save(caucasus_kknn_validate, caucasus_krige_validate,
 # Temporary data
 save(hc_raster, sy_h,
      file = "data/spatial/kknn-h_raster.Rdata")
+
+# Write raster
+raster::rasterFromXYZ(dplyr::select(hc_result,
+                                    x = lon,
+                                    y = lat,
+                                    sy) %>% mutate(sy = 10^sy),
+                      crs = projection(sy_h)) %>% 
+  raster::writeRaster(x = ., filename = "data/spatial/knn-h", overwrite = T)

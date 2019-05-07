@@ -38,17 +38,18 @@ load("data/tidy/model_validate.Rdata")
 # 1) Choose the best model
 rbind(
   caucasus_kknn_validate %>% mutate(model = "KNN"),
-  caucasus_krige_validate %>% mutate(model = "Кригинг"),
+  caucasus_krige_validate %>% mutate(model = "OK"),
   caucasus_kknn_h_validate %>% mutate(model = "KNN-h"),
-  caucasus_cokrige_validate %>% mutate(model = "Ко-кригинг")
+  caucasus_cokrige_validate %>% mutate(model = "CK")
 ) %>% 
   mutate(type = case_when(
-    type == "train" ~ "модель",
-    TRUE ~ "валидация"
+    type == "train" ~ "train",
+    TRUE ~ "test"
   )) -> caucasus_ssy_models
 
 caucasus_ssy_models %<>%
-  dplyr::select(8, 1:ncol(.))
+  dplyr::select(8, 1:ncol(.)) %>% 
+  mutate_if(is.numeric, list(~signif(., 2)))
 
 # Export to EXCEL
 caucasus_book <- XLConnect::loadWorkbook("analysis/summary_caucasus.xlsx")

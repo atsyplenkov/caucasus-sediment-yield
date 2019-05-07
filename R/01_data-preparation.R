@@ -40,50 +40,148 @@ sy %>%
 ################
 # Keep stations with mp > 10 years
 sy %>% 
-  mutate(MP_length = ifelse(is.na(MP_length), 10, MP_length)) %>% 
+  mutate(MP_length = ifelse(is.na(MP_length), 10, MP_length)) %>%
   filter(MP_length >= 10) -> sy
 
 ################
 
+# Convert Point Data into Geodata
+sy %<>%
+  st_as_sf(coords = c("Longitude", "Lattitude"),
+           crs = "+proj=longlat +ellps=WGS84") %>% 
+  # reproject to UTM
+  st_transform(., 32638)
+
+# 3) Load spatial data -------------------------------------------------------
+caucasus <- sf::read_sf("data/raw/caucasus.shp") %>% 
+  # reproject to UTM
+  st_transform(., 32638)
+
+# Intersect Caucasus and SY-points
+sy <- st_intersection(sy, caucasus)
+
 # Catchment area analysis
 sy %>% 
+  as_tibble() %>% 
   mutate(area_g = cut(Catchment_area,
                       breaks = c(0, 1000, 5000,
                                  10000, 15000, Inf),
                       labels = c("<1000", "1000-5000", "5000-10000",
                                  "10000-15000", ">15000"))) %>% 
   group_by(area_g) %>% 
-  summarise(n = n())
+  summarise(n = n()) -> sy_area_table
 
-# Histogram of MP length
 sy %>% 
+  as_tibble() %>% 
+  group_by(Country) %>% 
+  summarise(n = n(),
+            Source = paste(unique(Source_data), collapse = ";")) -> sy_source_table
+
+# 2) MP length analysis -----------------------------------------------------
+# Histogram of MP length
+sy %>%
   ggplot(aes(x = MP_length )) +
-  geom_histogram(fill = "#EFC000",
-                 color = "black",
-                 binwidth = 5,
-                 alpha = .7) +
+  geom_histogram(fill = "#0188B7",
+                 color = "white",
+                 binwidth = 5) +
   geom_vline(aes(xintercept = median(MP_length , na.rm = T)),
              size = 1,
              linetype = "dashed") +
   scale_x_continuous(expand = c (0, 0),
                      breaks = seq(10, 90, 10)) +
   scale_y_continuous(expand = c(0,0)) +
-  labs(x = "Продолжительность наблюдения, лет",
+  labs(x = expression(italic(MP)~", years"),
        # title = "Количество постов",
-       subtitle = paste0("Медианная продолжительность ",
+       subtitle = paste0("Median length ",
                          median(sy$MP_length, na.rm = T),
-                         " лет, n = ",
+                         " years, n = ",
                          tally(sy)),
-       y = "Кол-во постов") +
-  theme_pubr(base_family = "Ubuntu") -> sy_mp
+       y = "Count") +
+  theme_clean() -> sy_mp
 
-ggsave("figures/3-6_caucasus-sy_mp.png", dpi = 500,
-       width = 9, height = 4)
+# Plot year availibility
+sy %>% 
+  as_tibble() %>% 
+  separate(Measuring_period, c("year1", "year2", "year3"), ",") %>% 
+  mutate(
+    year1 = str_replace_all(year1, pattern = "-", replacement = ":"),
+    year2 = str_replace_all(year2, pattern = "-", replacement = ":"),
+    year3 = str_replace_all(year3, pattern = "-", replacement = ":")
+  ) -> year
+
+year %>% 
+  filter(str_detect(year1, "<")) %>% 
+  dplyr::select(year1, MP_length) %>% 
+  mutate(year1 = str_replace_all(year1, pattern = "<", replacement = ""),
+         year1 = as.numeric(year1),
+         year4 = year1 - MP_length,
+         year4 = glue::glue("{year4}:{year1}")) %>%
+  dplyr::select(year4) -> year4
+
+year %>% 
+  filter(!is.na(year2)) %>% 
+  dplyr::select(year2) -> year2
+
+year %>% 
+  filter(!is.na(year3)) %>% 
+  dplyr::select(year3) -> year3
+
+year %>% 
+  filter(!str_detect(year1, "<")) %>% 
+  dplyr::select(year1) -> year1
+
+year <- c(as.vector(t(year1)),
+          as.vector(t(year2)),
+          as.vector(t(year3)),
+          as.vector(t(year4))) %>% 
+  strsplit(., ":") %>% 
+  lapply(as.numeric) %>% 
+  lapply(function(x) {
+    if (length(x) == 2) {
+      seq(x[1], x[2], 1)
+    } else {
+      x
+    }
+  }) %>% 
+  unlist() %>%
+  data_frame() %>% 
+  magrittr::set_colnames(c("year"))
+
+rm(year1, year2, year3, year4)
+
+year %>%
+  ggplot(aes(x = year)) +
+  geom_histogram(fill = "#A91511",
+                 color = "white",
+                 binwidth = 5) +
+  geom_vline(aes(xintercept = median(year , na.rm = T)),
+             size = 1,
+             linetype = "dashed") +
+  scale_x_continuous(expand = c (0, 0),
+                     breaks = seq(1925, 2015, 10)) +
+  scale_y_continuous(expand = c(0,0)) +
+  labs(x = "Year",
+       # title = "Количество постов",
+       subtitle = paste0("Median year ",
+                         median(year$year, na.rm = T),
+                         ", n = ",
+                         tally(year)),
+       y = "Count") +
+  theme_clean() -> sy_year
+
+ggsave("figures/3-6_caucasus-sy_mp.png",
+       plot = ggarrange(sy_mp,
+                        sy_year,
+                        nrow = 2,
+                        labels = "AUTO"),
+       dpi = 500,
+       width = 5, height = 5)
 
 
-# Проверка на нормальность
+# Проверка на нормальность ---------------------------------------------------
 # Гистограмма
 sy %>% 
+  as_tibble() %>% 
   ggplot(aes(x = (sy))) +
   geom_histogram(binwidth = 200, color = "dimgrey", fill = "white") +
   labs(y = "Количество",
@@ -91,7 +189,7 @@ sy %>%
   ggpubr::theme_pubclean(base_family = "Ubuntu") -> sy_hist
 
 qplot(sample = log10(sy),
-      data = sy) +
+      data = as_tibble(sy)) +
   stat_qq() +
   stat_qq_line() +
   labs(y = "Наблюдаемые квантили",
@@ -100,6 +198,7 @@ qplot(sample = log10(sy),
 
 # Диаграмма размахов
 sy %>%
+  as_tibble() %>% 
   mutate(sy_log = log10(sy)) %>% 
   mutate(outlier.high = sy_log > quantile(sy_log, .75) + 1.50*IQR(sy_log),
          outlier.low = sy_log < quantile(sy_log, .25) - 1.50*IQR(sy_log),
@@ -150,5 +249,16 @@ while (grubbs.test(log10(sy$sy))$p.value < 0.5) {
 # Normality test
 shapiro.test(log10(sy$sy))
 
-# Save data
+# SAVE --------------------------------------------------------------------
 save(sy, file = "data/tidy/sy_10-caucasus.Rdata")
+
+# Export to EXCEL
+caucasus_book <- loadWorkbook("analysis/summary_caucasus.xlsx", create = T)
+
+# Subset summary
+createSheet(caucasus_book, "Database summary")
+writeWorksheet(object = caucasus_book,
+               data = cbind(sy_area_table, sy_source_table),
+               sheet = "Database summary")
+
+saveWorkbook(object = caucasus_book, file = "analysis/summary_caucasus.xlsx")

@@ -42,11 +42,11 @@ sy %<>%
          sy = log10(sy))
 
 # Convert Point Data into Geodata
-sy %<>%
-  st_as_sf(coords = c("Longitude", "Lattitude"),
-           crs = "+proj=longlat +ellps=WGS84") %>% 
-  # reproject to UTM
-  st_transform(., 32638)
+# sy %<>%
+#   st_as_sf(coords = c("Longitude", "Lattitude"),
+#            crs = "+proj=longlat +ellps=WGS84") %>% 
+#   # reproject to UTM
+#   st_transform(., 32638)
 
 # 3) Load spatial data -------------------------------------------------------
 caucasus <- sf::read_sf("data/raw/caucasus.shp") %>% 
@@ -115,10 +115,10 @@ rbind(
 # Describe subsets
 rbind(sy_val %>%
         as_tibble() %>% 
-        mutate(type = "Валидация"),
+        mutate(type = "Test"),
       sy_m %>%
         as_tibble() %>% 
-        mutate(type = "Модель")) -> sy_clean
+        mutate(type = "Train")) -> sy_clean
 
 eda_boxplot <- ggplot(sy_clean, aes(x = type,
                                     y = 10^sy,
@@ -142,7 +142,8 @@ eda_histogram <- ggplot(sy_clean,
   scale_fill_manual(values = c("#0288b7", "#a90010"), guide = FALSE) + 
   scale_x_log10(labels = fancyNumbers,
                 breaks = prettyLogs) +
-  labs(y = "Количество",
+  # labs(y = "Количество",
+  labs(y = "Count",
        x = expression(italic("log"[10])*"SSY")) +
   facet_wrap(~ type,
              nrow = 2,

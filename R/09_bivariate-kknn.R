@@ -89,16 +89,16 @@ ggplot() +
   geom_sf(data = coast, colour = "gray60", fill = NA, size = .6) +
   # add annotations
   annotate("text", x = -64055, y = 4786418,
-           label = expression(italic("Черное море")),
-           # label = expression(italic("Black Sea")),
+           # label = expression(italic("Черное море")),
+           label = expression(italic("Black Sea")),
            color = "gray80", size = 6, angle = -30) +
-  # annotate("text", x = 919866, y = 4609282,
-  #          label = expression(italic("Caspian Sea")),
-  #          color = "gray80", size = 6, angle = -55) +
+  annotate("text", x = 919866, y = 4609282,
+           label = expression(italic("Caspian Sea")),
+           color = "gray80", size = 6, angle = -55) +
   # labs
-  labs(title = "Среднегодовой модуль стока взвешенных наносов Кавказа",
-       subtitle = expression(SSY*","~"т"%.%"км"^"-2"),
-       caption = "На основании наблюдений на гидрометеопостах с ≈1930х по 2015\nАнатолий Цыпленков\natsyplenkov@gmail.com") +
+  # labs(title = "Среднегодовой модуль стока взвешенных наносов Кавказа",
+  #      subtitle = expression(SSY*","~"т"%.%"км"^"-2"),
+  #      caption = "На основании наблюдений на гидрометеопостах с ≈1930х по 2015\nАнатолий Цыпленков\natsyplenkov@gmail.com") +
   # labs(title = "Caucasus average annual Suspended Sediment Yield",
   #      subtitle = expression(SSY*","~t%.%km^"-2"),
   #      caption = "Based on gauging stations data from ≈1930s to 2015\nAnatolii Tsyplenkov\natsyplenkov@gmail.com") +
@@ -109,18 +109,18 @@ ggplot() +
 # Get coordinates manually
 # http://epsg.io/map#srs=32638
 annotations <- tibble(
-  # label = c(
-  #   "Grey areas mean\nlow elevation and\nlow SSY",
-  #   "Blue areas mean\nhigh elevation and\nlow SSY",
-  #   "Violet areas mean\nhigh elevation and\nhigh SSY",
-  #   "Red areas mean\nlow elevation and\nhigh SSY"
-  # ),
   label = c(
-    "Серый означает\nмалые высоты и\nмалый сток наносов",
-    "Синий означает\nбольшие высоты и\nмалый сток наносов",
-    "Фиолетовый означает\nбольшие высоты и\nбольшой сток наносов",
-    "Красный означает\nмалые высоты и\nбольшой сток\nнаносов"
+    "Grey areas mean\nlow elevation and\nlow SSY",
+    "Blue areas mean\nhigh elevation and\nlow SSY",
+    "Violet areas mean\nhigh elevation and\nhigh SSY",
+    "Red areas mean\nlow elevation and\nhigh SSY"
   ),
+  # label = c(
+  #   "Серый означает\nмалые высоты и\nмалый сток наносов",
+  #   "Синий означает\nбольшие высоты и\nмалый сток наносов",
+  #   "Фиолетовый означает\nбольшие высоты и\nбольшой сток наносов",
+  #   "Красный означает\nмалые высоты и\nбольшой сток\nнаносов"
+  # ),
   arrow_from = c(
     "732188,4200904", # grey
     "264049,4351782", # blue
@@ -224,10 +224,14 @@ ggplot() +
       fill = fill)
   ) +
   scale_fill_identity() +
-  labs(x = paste0("Сток наносов ⟶️\nот ",round(range(quantiles_sy))[1],
-                  " до ", prettyNum(round(range(quantiles_sy))[2], big.mark = " "),
-                  " т/км"),
-       y = paste0("Высота ⟶️\nот 0 до 5642 мБС")) +
+  # labs(x = paste0("Сток наносов ⟶️\nот ",round(range(quantiles_sy))[1],
+  #                 " до ", prettyNum(round(range(quantiles_sy))[2], big.mark = " "),
+  #                 " т/км"),
+  #      y = paste0("Высота ⟶️\nот 0 до 5642 мБС")) +
+  labs(x = paste0("SSY ⟶️\nfrom ",round(range(quantiles_sy))[1],
+                  " to ", prettyNum(round(range(quantiles_sy))[2], big.mark = " "),
+                  " t/km"),
+       y = paste0("Elevation ⟶️\nfrom 0 to 5642 m. asl")) +
   # labs(x = "Higher SSY ⟶️",
   #      y = "Higher Elevation ⟶️") +
   theme_map() +
@@ -245,9 +249,9 @@ ggplot() +
 # Combine plots
 ggdraw() +
   draw_plot(map, 0, 0, 1, 1) +
-  draw_plot(legend, 0.07, 0.075, 0.27, 0.27) -> ssy_caucasus_bivariate
+  draw_plot(legend, 0.06, 0.07, 0.3, 0.3) -> ssy_caucasus_bivariate
 
 # SAVE -----------------------------------------------------------------------
-ggsave("figures/3-XX_ssy_caucasus_bivariate_ru.png",
+ggsave("figures/3-XX_ssy_caucasus_bivariate.png",
        plot = ssy_caucasus_bivariate,
        dpi = 500, w = 8, h = 6)

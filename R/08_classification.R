@@ -102,25 +102,30 @@ ggplot() +
               aes(x = lon, y = lat, fill = class, alpha = prob)) +
   # add coastline
   geom_sf(data = coast, colour = "gray60", fill = NA, size = .6) +
-  annotate("text", x = -9610, y = 4710000,
-           label = expression(italic("Черное море")),
-           color = "gray80", size = 6, angle = -30) +
+  # add Mozherin borders
   geom_sf(data = mozh, aes(color = "black"), size = .4, fill = NA) +
+  # add annotations
+  annotate("text", x = -64055, y = 4786418,
+           # label = expression(italic("Черное море")),
+           label = expression(italic("Black Sea")),
+           color = "gray80", size = 6, angle = -30) +
+  annotate("text", x = 919866, y = 4609282,
+           label = expression(italic("Caspian Sea")),
+           color = "gray80", size = 6, angle = -55) +
   # add training points
   geom_point(data = hc_train,
              aes(x = lon, y = lat),
              color = "black",
              fill = "white",
              shape = 21,
-             alpha = 0.8,
              size = 2) +
   # remove propability legend
   scale_alpha_continuous(guide = F) +
   # add fancy legend
   # https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/
   scale_fill_viridis(option = "E",
-                     # name = expression("Denudation rate"*","*~mm%.%y^"-1"),
-                     name = expression("Годичный слой денудации"*","*~"мм"%.%"год"^"-1"),
+                     name = expression("Denudation rate"*","*~mm%.%y^"-1"),
+                     # name = expression("Годичный слой денудации"*","*~"мм"%.%"год"^"-1"),
                      discrete = T,
                      direction = -1,
                      guide = guide_legend(
@@ -128,7 +133,7 @@ ggplot() +
                        keyheight = unit(2, units = "mm"),
                        keywidth = unit(80 / length(labels), units = "mm"),
                        title.position = 'top',
-                       # title.hjust = 0.5,
+                       title.hjust = 0.5,
                        label.hjust = 1,
                        nrow = 1,
                        byrow = T,
@@ -137,7 +142,8 @@ ggplot() +
                      )) +
   scale_color_manual(name = "",
                      values = "black",
-                     labels = "границы областей равной денудации по \n [Мозжерин, Шарифуллин, 2014]",
+                     # labels = "границы областей равной денудации по \n [Мозжерин, Шарифуллин, 2014]",
+                     labels = "Denudation rate areas\naccording to (Mozzherin and Sharifullin, 2015)",
                      guide = guide_legend(title.position = 'top',
                                           # title.hjust = 0.5,
                                           label.hjust = 1)) +
@@ -185,8 +191,8 @@ hc_polygons <- st_as_sf(hc_polygons) %>%
   ))
 
 # SABRE!
-vmeasure_calc(x = hc_polygons, x_name = class,
-              y = mozh, y_name = class)
+mapcurves_calc(x = hc_polygons, x_name = class,
+               y = mozh, y_name = class)
 
 hc_polygons$area <-  as.numeric(st_area(hc_polygons) / 10^6)
 mozh$area <-  as.numeric(st_area(mozh) / 10^6)
@@ -208,17 +214,26 @@ mozh %>%
            alpha = .8,
            position = "dodge") +
   geom_text(aes(label = glue::glue("{round(area)}%"), group = layer),
-            position = position_dodge(0.9), vjust = -.3) +
+            position = position_dodge(0.9), vjust = 1, color = "white") +
   expand_limits(y = c(0,35)) +
-  labs(x = expression("Темпы денудации"*","*~"мм"%.%"год"^"-1"),
-       y = "Площадь, %") +
+  # labs(x = expression("Темпы денудации"*","*~"мм"%.%"год"^"-1"),
+  #      y = "Площадь, %") +
+  labs(x = expression("Denudation rate"*","*~"mm"%.%"y"^"-1"),
+       y = "Area, %") +
   scale_fill_manual(name = "",
                     values = c("#0288b7", "#a90010"),
-                    labels = c("KKNN", "[Мозжерин, Шарифуллин, 2014]")) +
+                    # labels = c("KKNN", "[Мозжерин, Шарифуллин, 2014]")) +
+                    labels = c("KNN", "(Mozzherin and Sharifullin, 2015)")) +
   scale_x_discrete(limits = labels) +
   theme_clean() -> class_area
 
 # SAVE -----------------------------------------------------------------------
+library(cowplot)
+
+ggdraw() +
+  draw_plot(hc_caucasus_classes, 0, 0, 1, 1) +
+  draw_plot(class_area, 0.1, 0.12, 0.4, 0.35)
+
 ggsave("figures/20_sy-caucasus-classes.png",
        plot = hc_caucasus_classes,
        dpi = 500, w = 8, h = 6)
