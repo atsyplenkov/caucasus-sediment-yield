@@ -1,71 +1,71 @@
 Country,River_name,Station_name,Lattitude,Longitude,Catchment_area,SSY_average,Measuring_period,MP_length,Runoff_average,Source_data,Method
-Armenia,Ахурян,с. Капс,40.870308,43.736561,839,30,NA,NA,7.9705,State water cadastre,Gauging Station measurements
-Armenia,Ахурян,с. Айкадзор (Кошаванк),40.532459,43.649792,8140,39,NA,NA,29.304,State water cadastre,Gauging Station measurements
-Armenia,Касах,г. Аштарак,40.287346,44.355225,1020,34,NA,NA,5.814,State water cadastre,Gauging Station measurements
-Armenia,Мармарик,с. Агавнадзор (Бабакши),40.569054,44.70496,387,17,NA,NA,5.2245,State water cadastre,Gauging Station measurements
-Armenia,Варденис,с. Варденик,40.13015,45.44305,110,20,NA,NA,1.661,State water cadastre,Gauging Station measurements
-Armenia,Варденис,с. Варденик (Нижняя Гезалдара),40.11956,45.455433,105,16,NA,NA,0.1575,State water cadastre,Gauging Station measurements
-Armenia,Аргичи,с. Геташен Верин (Верхний Адиаман),40.14082,45.265938,366,24,NA,NA,5.1606,State water cadastre,Gauging Station measurements
-Armenia,Арпа,г. Ехегнадзор (Микоян),39.736176,45.331306,1220,75,NA,NA,11.712,State water cadastre,Gauging Station measurements
-Armenia,Арпа,с. Арени (Арпа),39.71796,45.168247,2040,100,NA,NA,20.604,State water cadastre,Gauging Station measurements
-Armenia,Элегис,с. Шатин,39.825943,45.302128,458,89,NA,NA,7.9692,State water cadastre,Gauging Station measurements
-Armenia,Мегригет,г. Мегри,38.89658,46.2379,274,140,NA,NA,3.0962,State water cadastre,Gauging Station measurements
-Armenia,Воротан,с. Борисовка,39.651123,45.826355,507,3.6,NA,NA,6.7938,State water cadastre,Gauging Station measurements
-Armenia,Воротан,с. Ангехакот,39.558437,45.92524,787,24,NA,NA,10.4671,State water cadastre,Gauging Station measurements
-Armenia,Воротан,с. Эйвазлар,39.422642,46.38681,2020,68,NA,NA,19.998,State water cadastre,Gauging Station measurements
-Armenia,Дебет,ст. Налбад,40.846016,44.188236,359,32,NA,NA,2.4412,State water cadastre,Gauging Station measurements
-Armenia,Дебет,с. Мегрут,40.816967,44.544647,1070,87,NA,NA,7.49,State water cadastre,Gauging Station measurements
-Armenia,Дебет,ст. Туманян (Колагеран),40.904114,44.623478,1370,80,NA,NA,10.275,State water cadastre,Gauging Station measurements
-Armenia,Дебет,ст. Ахтала,41.142143,44.781281,3430,95,NA,NA,31.556,State water cadastre,Gauging Station measurements
-Armenia,Дзорагет,г. Степанаван,41.008865,44.396854,1000,50,NA,NA,12.4,State water cadastre,Gauging Station measurements
-Armenia,Дзорагет,ниже впадения р. Гаргар,40.954098,44.589237,1450,45,NA,NA,15.66,State water cadastre,Gauging Station measurements
-Armenia,Акстафа,г. Дилижан,40.746147,44.871418,222,53,NA,NA,2.4864,State water cadastre,Gauging Station measurements
-Armenia,Акстафа,г. Иджеван,40.875122,45.147301,1270,72,NA,NA,8.382,State water cadastre,Gauging Station measurements
-Armenia,Акстафа,Кривой мост,40.960201,45.180431,1610,59,NA,NA,8.05,State water cadastre,Gauging Station measurements
-Armenia,Гетик,с. Алачух,40.688869,45.131081,328,28,NA,NA,3.28,State water cadastre,Gauging Station measurements
-Armenia,Ахум,с. Цахкаван (Ахум),40.935482,45.343113,169,36,NA,NA,1.3013,State water cadastre,Gauging Station measurements
-Armenia,Таузчай,с. Берд,40.87537,45.398952,102,40,NA,NA,0.7038,State water cadastre,Gauging Station measurements
-Azerbaijan,Аракс,пгт Саатлы,39.948135,48.352531,100000,49,NA,NA,210,State water cadastre,Gauging Station measurements
-Azerbaijan,Нахичеваньчай,с. Карабаба (Шахбуз),39.38596,45.541397,449,270,NA,NA,5.7023,State water cadastre,Gauging Station measurements
-Azerbaijan,Джагрыхчай,с. Паиз,39.407539,45.379009,348,89,NA,NA,1.218,State water cadastre,Gauging Station measurements
-Azerbaijan,Гилянчай,с. Нюргют,39.195236,45.898529,94.9,27,NA,NA,2.24913,State water cadastre,Gauging Station measurements
-Azerbaijan,Ордубадчай,с. Нуснус,38.947056,46.016979,34,100,NA,NA,0.3672,State water cadastre,Gauging Station measurements
-Azerbaijan,Акерачай,с. Караджанлы,39.398037,46.645805,2310,83,NA,NA,14.553,State water cadastre,Gauging Station measurements
-Azerbaijan,Куручай,с. Туг,39.592377,46.985275,201,27,NA,NA,1.6683,State water cadastre,Gauging Station measurements
-Azerbaijan,Кудиалчай,с. Кырыз,41.23344,48.302208,426,1500,NA,NA,8.094,State water cadastre,Gauging Station measurements
-Azerbaijan,Кудиалчай,с. Кюпчал (Верхний Кюпчал),41.332664,48.386276,517,1400,NA,NA,6.8244,State water cadastre,Gauging Station measurements
-Azerbaijan,Сумгаит,с. Перекишкюль,40.51252,49.435925,1500,200,NA,NA,1.2,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,"г. Мингечаур (пост № 4, ГЭС Мингечаурская)",40.786076,47.017223,62600,400,NA,NA,294.22,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,ст. Евлах,40.616852,47.180111,66800,3.9,NA,NA,300.6,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,с. Зардоб,40.206982,47.712185,76000,34,NA,NA,304,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,"г. Сабирабад (Петропавловка, Джеват)",40.033062,48.474869,178000,180,NA,NA,587.4,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,с. Сурра,40.076427,48.535618,178000,96,NA,NA,498.4,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,г. Сальяны,39.614822,48.97744,188000,160,NA,NA,470,State water cadastre,Gauging Station measurements
-Azerbaijan,Кюракчай,с. Дозулар,40.527069,46.478828,439,80,NA,NA,3.7315,State water cadastre,Gauging Station measurements
-Azerbaijan,"Гераньчай (Карачай, Геранчай)","с. Юхары Аджакенд (с. Верхний Агджакенд, Юхары Агджакенд)",40.394203,46.493771,144,9,NA,NA,1.9584,State water cadastre,Gauging Station measurements
-Azerbaijan,Тертер,с. Мадагиз,40.319225,46.748962,2460,150,NA,NA,22.14,State water cadastre,Gauging Station measurements
-Azerbaijan,Левчай,с. Камышлы,40.205769,46.184807,363,490,NA,NA,5.445,State water cadastre,Gauging Station measurements
-Azerbaijan,Тутхун,близ устья (устье),40.135601,46.22588,522,58,NA,NA,4.5936,State water cadastre,Gauging Station measurements
-Azerbaijan,"Турианчай (Карасу, Карачай)",с. Савалан,40.769306,47.594357,1340,1000,NA,NA,15.812,State water cadastre,Gauging Station measurements
-Azerbaijan,Каркарчай,мост Ага-Керпи (с. Агакерпи),39.852547,46.771702,238,30,NA,NA,1.4042,State water cadastre,Gauging Station measurements
-Azerbaijan,Геокчай,г. Геокчай,40.642071,47.745716,1480,890,NA,NA,12.876,State water cadastre,Gauging Station measurements
-Azerbaijan,Геокчай,с. Буйнуз,40.855019,47.977249,308,1300,NA,NA,8.6548,State water cadastre,Gauging Station measurements
-Azerbaijan,Агричай,с. Исмаиллы,40.764923,48.140812,88.2,50,NA,NA,1.2348,State water cadastre,Gauging Station measurements
-Azerbaijan,Ахохчай,с. Ханагя,40.847691,48.131729,66.4,4100,NA,NA,1.48072,State water cadastre,Gauging Station measurements
-Azerbaijan,Велишчай,с. Такдама,38.94305,48.417145,428,200,NA,NA,3.0388,State water cadastre,Gauging Station measurements
-Azerbaijan,Велишчай,с. Шихляр (Шихлар),38.951942,48.519279,785,150,NA,NA,4.4745,State water cadastre,Gauging Station measurements
-Azerbaijan,"Ленкоранка (Ленкорань, Вазарю)","с. Сифидор (Риво, Рво)",38.706905,48.779564,893,110,NA,NA,7.9477,State water cadastre,Gauging Station measurements
-Azerbaijan,Тангерю (Тангеручай),с. Ваго,38.58083,48.79446,153,25,NA,NA,2.8917,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,с. Крахкесаман,41.230801,45.487366,35900,370,NA,NA,258.48,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,с. Хулуф,40.917568,46.402996,40500,390,NA,NA,263.25,State water cadastre,Gauging Station measurements
-Azerbaijan,Кура,с. Карасахкал,40.901691,46.454597,41700,190,NA,NA,291.9,State water cadastre,Gauging Station measurements
-Azerbaijan,Асрикчай,с. Асрик-Джирдахан,40.865536,45.627586,114,7.9,NA,NA,0.3306,State water cadastre,Gauging Station measurements
-Azerbaijan,Дзегамчай,с. Яныхлы,40.880547,45.756649,740,340,NA,NA,5.032,State water cadastre,Gauging Station measurements
-Azerbaijan,Кошкарачай,г. Дашкесан,40.516838,46.103527,105,30,NA,NA,0.7455,State water cadastre,Gauging Station measurements
-Azerbaijan,Катехчай,с. Кабиздара,41.722992,46.600651,236,490,NA,NA,9.9356,State water cadastre,Gauging Station measurements
-Azerbaijan,Талачай,г. Закаталы,41.640236,46.668381,136,2800,NA,NA,3.3456,State water cadastre,Gauging Station measurements
-Azerbaijan,Курмухчай,с. Илису (Елису),41.468037,47.045258,166,1500,NA,NA,4.5982,State water cadastre,Gauging Station measurements
-Azerbaijan,Агричай,с. Баш-Дашагыл,41.168053,47.429993,92,1300,NA,NA,2.53,State water cadastre,Gauging Station measurements
+Armenia,РђС…СѓСЂСЏРЅ,СЃ. РљР°РїСЃ,40.870308,43.736561,839,30,NA,NA,7.9705,State water cadastre,Gauging Station measurements
+Armenia,РђС…СѓСЂСЏРЅ,СЃ. РђР№РєР°РґР·РѕСЂ (РљРѕС€Р°РІР°РЅРє),40.532459,43.649792,8140,39,NA,NA,29.304,State water cadastre,Gauging Station measurements
+Armenia,РљР°СЃР°С…,Рі. РђС€С‚Р°СЂР°Рє,40.287346,44.355225,1020,34,NA,NA,5.814,State water cadastre,Gauging Station measurements
+Armenia,РњР°СЂРјР°СЂРёРє,СЃ. РђРіР°РІРЅР°РґР·РѕСЂ (Р‘Р°Р±Р°РєС€Рё),40.569054,44.70496,387,17,NA,NA,5.2245,State water cadastre,Gauging Station measurements
+Armenia,Р’Р°СЂРґРµРЅРёСЃ,СЃ. Р’Р°СЂРґРµРЅРёРє,40.13015,45.44305,110,20,NA,NA,1.661,State water cadastre,Gauging Station measurements
+Armenia,Р’Р°СЂРґРµРЅРёСЃ,СЃ. Р’Р°СЂРґРµРЅРёРє (РќРёР¶РЅСЏСЏ Р“РµР·Р°Р»РґР°СЂР°),40.11956,45.455433,105,16,NA,NA,0.1575,State water cadastre,Gauging Station measurements
+Armenia,РђСЂРіРёС‡Рё,СЃ. Р“РµС‚Р°С€РµРЅ Р’РµСЂРёРЅ (Р’РµСЂС…РЅРёР№ РђРґРёР°РјР°РЅ),40.14082,45.265938,366,24,NA,NA,5.1606,State water cadastre,Gauging Station measurements
+Armenia,РђСЂРїР°,Рі. Р•С…РµРіРЅР°РґР·РѕСЂ (РњРёРєРѕСЏРЅ),39.736176,45.331306,1220,75,NA,NA,11.712,State water cadastre,Gauging Station measurements
+Armenia,РђСЂРїР°,СЃ. РђСЂРµРЅРё (РђСЂРїР°),39.71796,45.168247,2040,100,NA,NA,20.604,State water cadastre,Gauging Station measurements
+Armenia,Р­Р»РµРіРёСЃ,СЃ. РЁР°С‚РёРЅ,39.825943,45.302128,458,89,NA,NA,7.9692,State water cadastre,Gauging Station measurements
+Armenia,РњРµРіСЂРёРіРµС‚,Рі. РњРµРіСЂРё,38.89658,46.2379,274,140,NA,NA,3.0962,State water cadastre,Gauging Station measurements
+Armenia,Р’РѕСЂРѕС‚Р°РЅ,СЃ. Р‘РѕСЂРёСЃРѕРІРєР°,39.651123,45.826355,507,3.6,NA,NA,6.7938,State water cadastre,Gauging Station measurements
+Armenia,Р’РѕСЂРѕС‚Р°РЅ,СЃ. РђРЅРіРµС…Р°РєРѕС‚,39.558437,45.92524,787,24,NA,NA,10.4671,State water cadastre,Gauging Station measurements
+Armenia,Р’РѕСЂРѕС‚Р°РЅ,СЃ. Р­Р№РІР°Р·Р»Р°СЂ,39.422642,46.38681,2020,68,NA,NA,19.998,State water cadastre,Gauging Station measurements
+Armenia,Р”РµР±РµС‚,СЃС‚. РќР°Р»Р±Р°Рґ,40.846016,44.188236,359,32,NA,NA,2.4412,State water cadastre,Gauging Station measurements
+Armenia,Р”РµР±РµС‚,СЃ. РњРµРіСЂСѓС‚,40.816967,44.544647,1070,87,NA,NA,7.49,State water cadastre,Gauging Station measurements
+Armenia,Р”РµР±РµС‚,СЃС‚. РўСѓРјР°РЅСЏРЅ (РљРѕР»Р°РіРµСЂР°РЅ),40.904114,44.623478,1370,80,NA,NA,10.275,State water cadastre,Gauging Station measurements
+Armenia,Р”РµР±РµС‚,СЃС‚. РђС…С‚Р°Р»Р°,41.142143,44.781281,3430,95,NA,NA,31.556,State water cadastre,Gauging Station measurements
+Armenia,Р”Р·РѕСЂР°РіРµС‚,Рі. РЎС‚РµРїР°РЅР°РІР°РЅ,41.008865,44.396854,1000,50,NA,NA,12.4,State water cadastre,Gauging Station measurements
+Armenia,Р”Р·РѕСЂР°РіРµС‚,РЅРёР¶Рµ РІРїР°РґРµРЅРёСЏ СЂ. Р“Р°СЂРіР°СЂ,40.954098,44.589237,1450,45,NA,NA,15.66,State water cadastre,Gauging Station measurements
+Armenia,РђРєСЃС‚Р°С„Р°,Рі. Р”РёР»РёР¶Р°РЅ,40.746147,44.871418,222,53,NA,NA,2.4864,State water cadastre,Gauging Station measurements
+Armenia,РђРєСЃС‚Р°С„Р°,Рі. РРґР¶РµРІР°РЅ,40.875122,45.147301,1270,72,NA,NA,8.382,State water cadastre,Gauging Station measurements
+Armenia,РђРєСЃС‚Р°С„Р°,РљСЂРёРІРѕР№ РјРѕСЃС‚,40.960201,45.180431,1610,59,NA,NA,8.05,State water cadastre,Gauging Station measurements
+Armenia,Р“РµС‚РёРє,СЃ. РђР»Р°С‡СѓС…,40.688869,45.131081,328,28,NA,NA,3.28,State water cadastre,Gauging Station measurements
+Armenia,РђС…СѓРј,СЃ. Р¦Р°С…РєР°РІР°РЅ (РђС…СѓРј),40.935482,45.343113,169,36,NA,NA,1.3013,State water cadastre,Gauging Station measurements
+Armenia,РўР°СѓР·С‡Р°Р№,СЃ. Р‘РµСЂРґ,40.87537,45.398952,102,40,NA,NA,0.7038,State water cadastre,Gauging Station measurements
+Azerbaijan,РђСЂР°РєСЃ,РїРіС‚ РЎР°Р°С‚Р»С‹,39.948135,48.352531,100000,49,NA,NA,210,State water cadastre,Gauging Station measurements
+Azerbaijan,РќР°С…РёС‡РµРІР°РЅСЊС‡Р°Р№,СЃ. РљР°СЂР°Р±Р°Р±Р° (РЁР°С…Р±СѓР·),39.38596,45.541397,449,270,NA,NA,5.7023,State water cadastre,Gauging Station measurements
+Azerbaijan,Р”Р¶Р°РіСЂС‹С…С‡Р°Р№,СЃ. РџР°РёР·,39.407539,45.379009,348,89,NA,NA,1.218,State water cadastre,Gauging Station measurements
+Azerbaijan,Р“РёР»СЏРЅС‡Р°Р№,СЃ. РќСЋСЂРіСЋС‚,39.195236,45.898529,94.9,27,NA,NA,2.24913,State water cadastre,Gauging Station measurements
+Azerbaijan,РћСЂРґСѓР±Р°РґС‡Р°Р№,СЃ. РќСѓСЃРЅСѓСЃ,38.947056,46.016979,34,100,NA,NA,0.3672,State water cadastre,Gauging Station measurements
+Azerbaijan,РђРєРµСЂР°С‡Р°Р№,СЃ. РљР°СЂР°РґР¶Р°РЅР»С‹,39.398037,46.645805,2310,83,NA,NA,14.553,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂСѓС‡Р°Р№,СЃ. РўСѓРі,39.592377,46.985275,201,27,NA,NA,1.6683,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓРґРёР°Р»С‡Р°Р№,СЃ. РљС‹СЂС‹Р·,41.23344,48.302208,426,1500,NA,NA,8.094,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓРґРёР°Р»С‡Р°Р№,СЃ. РљСЋРїС‡Р°Р» (Р’РµСЂС…РЅРёР№ РљСЋРїС‡Р°Р»),41.332664,48.386276,517,1400,NA,NA,6.8244,State water cadastre,Gauging Station measurements
+Azerbaijan,РЎСѓРјРіР°РёС‚,СЃ. РџРµСЂРµРєРёС€РєСЋР»СЊ,40.51252,49.435925,1500,200,NA,NA,1.2,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,"Рі. РњРёРЅРіРµС‡Р°СѓСЂ (РїРѕСЃС‚ в„– 4, Р“Р­РЎ РњРёРЅРіРµС‡Р°СѓСЂСЃРєР°СЏ)",40.786076,47.017223,62600,400,NA,NA,294.22,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,СЃС‚. Р•РІР»Р°С…,40.616852,47.180111,66800,3.9,NA,NA,300.6,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,СЃ. Р—Р°СЂРґРѕР±,40.206982,47.712185,76000,34,NA,NA,304,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,"Рі. РЎР°Р±РёСЂР°Р±Р°Рґ (РџРµС‚СЂРѕРїР°РІР»РѕРІРєР°, Р”Р¶РµРІР°С‚)",40.033062,48.474869,178000,180,NA,NA,587.4,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,СЃ. РЎСѓСЂСЂР°,40.076427,48.535618,178000,96,NA,NA,498.4,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,Рі. РЎР°Р»СЊСЏРЅС‹,39.614822,48.97744,188000,160,NA,NA,470,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСЋСЂР°РєС‡Р°Р№,СЃ. Р”РѕР·СѓР»Р°СЂ,40.527069,46.478828,439,80,NA,NA,3.7315,State water cadastre,Gauging Station measurements
+Azerbaijan,"Р“РµСЂР°РЅСЊС‡Р°Р№ (РљР°СЂР°С‡Р°Р№, Р“РµСЂР°РЅС‡Р°Р№)","СЃ. Р®С…Р°СЂС‹ РђРґР¶Р°РєРµРЅРґ (СЃ. Р’РµСЂС…РЅРёР№ РђРіРґР¶Р°РєРµРЅРґ, Р®С…Р°СЂС‹ РђРіРґР¶Р°РєРµРЅРґ)",40.394203,46.493771,144,9,NA,NA,1.9584,State water cadastre,Gauging Station measurements
+Azerbaijan,РўРµСЂС‚РµСЂ,СЃ. РњР°РґР°РіРёР·,40.319225,46.748962,2460,150,NA,NA,22.14,State water cadastre,Gauging Station measurements
+Azerbaijan,Р›РµРІС‡Р°Р№,СЃ. РљР°РјС‹С€Р»С‹,40.205769,46.184807,363,490,NA,NA,5.445,State water cadastre,Gauging Station measurements
+Azerbaijan,РўСѓС‚С…СѓРЅ,Р±Р»РёР· СѓСЃС‚СЊСЏ (СѓСЃС‚СЊРµ),40.135601,46.22588,522,58,NA,NA,4.5936,State water cadastre,Gauging Station measurements
+Azerbaijan,"РўСѓСЂРёР°РЅС‡Р°Р№ (РљР°СЂР°СЃСѓ, РљР°СЂР°С‡Р°Р№)",СЃ. РЎР°РІР°Р»Р°РЅ,40.769306,47.594357,1340,1000,NA,NA,15.812,State water cadastre,Gauging Station measurements
+Azerbaijan,РљР°СЂРєР°СЂС‡Р°Р№,РјРѕСЃС‚ РђРіР°-РљРµСЂРїРё (СЃ. РђРіР°РєРµСЂРїРё),39.852547,46.771702,238,30,NA,NA,1.4042,State water cadastre,Gauging Station measurements
+Azerbaijan,Р“РµРѕРєС‡Р°Р№,Рі. Р“РµРѕРєС‡Р°Р№,40.642071,47.745716,1480,890,NA,NA,12.876,State water cadastre,Gauging Station measurements
+Azerbaijan,Р“РµРѕРєС‡Р°Р№,СЃ. Р‘СѓР№РЅСѓР·,40.855019,47.977249,308,1300,NA,NA,8.6548,State water cadastre,Gauging Station measurements
+Azerbaijan,РђРіСЂРёС‡Р°Р№,СЃ. РСЃРјР°РёР»Р»С‹,40.764923,48.140812,88.2,50,NA,NA,1.2348,State water cadastre,Gauging Station measurements
+Azerbaijan,РђС…РѕС…С‡Р°Р№,СЃ. РҐР°РЅР°РіСЏ,40.847691,48.131729,66.4,4100,NA,NA,1.48072,State water cadastre,Gauging Station measurements
+Azerbaijan,Р’РµР»РёС€С‡Р°Р№,СЃ. РўР°РєРґР°РјР°,38.94305,48.417145,428,200,NA,NA,3.0388,State water cadastre,Gauging Station measurements
+Azerbaijan,Р’РµР»РёС€С‡Р°Р№,СЃ. РЁРёС…Р»СЏСЂ (РЁРёС…Р»Р°СЂ),38.951942,48.519279,785,150,NA,NA,4.4745,State water cadastre,Gauging Station measurements
+Azerbaijan,"Р›РµРЅРєРѕСЂР°РЅРєР° (Р›РµРЅРєРѕСЂР°РЅСЊ, Р’Р°Р·Р°СЂСЋ)","СЃ. РЎРёС„РёРґРѕСЂ (Р РёРІРѕ, Р РІРѕ)",38.706905,48.779564,893,110,NA,NA,7.9477,State water cadastre,Gauging Station measurements
+Azerbaijan,РўР°РЅРіРµСЂСЋ (РўР°РЅРіРµСЂСѓС‡Р°Р№),СЃ. Р’Р°РіРѕ,38.58083,48.79446,153,25,NA,NA,2.8917,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,СЃ. РљСЂР°С…РєРµСЃР°РјР°РЅ,41.230801,45.487366,35900,370,NA,NA,258.48,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,СЃ. РҐСѓР»СѓС„,40.917568,46.402996,40500,390,NA,NA,263.25,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂР°,СЃ. РљР°СЂР°СЃР°С…РєР°Р»,40.901691,46.454597,41700,190,NA,NA,291.9,State water cadastre,Gauging Station measurements
+Azerbaijan,РђСЃСЂРёРєС‡Р°Р№,СЃ. РђСЃСЂРёРє-Р”Р¶РёСЂРґР°С…Р°РЅ,40.865536,45.627586,114,7.9,NA,NA,0.3306,State water cadastre,Gauging Station measurements
+Azerbaijan,Р”Р·РµРіР°РјС‡Р°Р№,СЃ. РЇРЅС‹С…Р»С‹,40.880547,45.756649,740,340,NA,NA,5.032,State water cadastre,Gauging Station measurements
+Azerbaijan,РљРѕС€РєР°СЂР°С‡Р°Р№,Рі. Р”Р°С€РєРµСЃР°РЅ,40.516838,46.103527,105,30,NA,NA,0.7455,State water cadastre,Gauging Station measurements
+Azerbaijan,РљР°С‚РµС…С‡Р°Р№,СЃ. РљР°Р±РёР·РґР°СЂР°,41.722992,46.600651,236,490,NA,NA,9.9356,State water cadastre,Gauging Station measurements
+Azerbaijan,РўР°Р»Р°С‡Р°Р№,Рі. Р—Р°РєР°С‚Р°Р»С‹,41.640236,46.668381,136,2800,NA,NA,3.3456,State water cadastre,Gauging Station measurements
+Azerbaijan,РљСѓСЂРјСѓС…С‡Р°Р№,СЃ. РР»РёСЃСѓ (Р•Р»РёСЃСѓ),41.468037,47.045258,166,1500,NA,NA,4.5982,State water cadastre,Gauging Station measurements
+Azerbaijan,РђРіСЂРёС‡Р°Р№,СЃ. Р‘Р°С€-Р”Р°С€Р°РіС‹Р»,41.168053,47.429993,92,1300,NA,NA,2.53,State water cadastre,Gauging Station measurements
 Azerbaijan,Gudyal?ay,Khinalug,41.17047222,48.14061944,104,764,1966-1990,25,3.3,"Eyubova, 2015",Gauging Station measurements
 Azerbaijan,Gudyal?ay,Qriz,41.20800278,48.24070278,426,1654,1962-2000,39,7.27,"Eyubova, 2015",Gauging Station measurements
 Azerbaijan,Gara?ay,Ryuk,41.13849722,48.35494167,137,755,1977-2002,26,2.32,"Eyubova, 2015",Gauging Station measurements
@@ -79,196 +79,196 @@ Azerbaijan,Gilan?ay,Nurgut,39.22226667,45.89956667,105,14.3,1962-1996,35,1.96,"A
 Azerbaijan,Nax?ivan?ay,Bi?anak,39.50108611,45.76100833,95,57,1962-1999,38,1.7,"Abduev, 2015",Gauging Station measurements
 Azerbaijan,Vilash?ay,Yardimli,38.90754444,48.25125833,315,23.25,1962-2001,40,1.165,"Abduev, 2015",Gauging Station measurements
 Azerbaijan,Lankaran?ay,Lankaran,38.72682778,48.8272,1060,145,1967-2001,35,12.75,"Abduev, 2015",Gauging Station measurements
-Russia,Черек Балкарский,с. Бабугент,43.2536,43.5446,694,793,1925-2013,89,26.31,UGMS,Gauging Station measurements
-Russia,Терек,ст. Котляревская,43.5731,44.0766,8782,539,"1925-2002, 2008-2015",86,132.1,UGMS,Gauging Station measurements
-Russia,Камбилеевка,с. Ольгинское,43.1643,44.6962,329,141,"1925-2002, 2008-2012, 2014-2015 ",84,3.23,UGMS,Gauging Station measurements
-Russia,Малка,ст. Прохладная,43.7441,44.0839,11488,481.5,"1925-2002, 2008-2013",84,96.62,UGMS,Gauging Station measurements
-Russia,Малка,с. Каменномостское,43.7334,43.0661,1548,118,"1925-2002, 2008-2013",84,13.93,UGMS,Gauging Station measurements
-Russia,Аргун,с. Дуба-Юрт,43.031,45.7216,3182,980,1925-2002,78,45.63,UGMS,Gauging Station measurements
-Russia,Ардон,с. Тамиск,42.9684,44.218,1139,680,1925-2002,78,29.02,UGMS,Gauging Station measurements
-Russia,Асса,с. Мужичи,43.0297,44.9974,764,183,1925-2002,78,15.28,UGMS,Gauging Station measurements
-Russia,Асса,ст-ца Нестеровская,43.225,45.0578,908,414,1925-2002,78,16.84,UGMS,Gauging Station measurements
-Russia,Баксан,с. Заюково,43.6061,43.3391,2172,311,1925-2002,78,33.58,UGMS,Gauging Station measurements
-Russia,Белка,г. Гудермес,43.3512,46.0806,1201,953,1925-2002,78,4.36,UGMS,Gauging Station measurements
-Russia,Гизельдон,с. Даргавс,42.8411,44.4421,132,423,1925-2002,78,2.9,UGMS,Gauging Station measurements
-Russia,Сунжа,с. Брагуны,43.4338,46.1006,12200,723,1925-2002,78,84.34,UGMS,Gauging Station measurements
-Russia,Сунжа,пгт Карабулак,43.2979,44.9062,602,76,1925-2002,78,2.89,UGMS,Gauging Station measurements
-Russia,Сунжа,г. Грозный,43.3013,45.6878,4709,452,1925-2002,78,36.16,UGMS,Gauging Station measurements
-Russia,Терек,с. Эльхотово,43.3605,44.1822,6754,323,1925-2002,78,102.75,UGMS,Gauging Station measurements
-Russia,Терек,с. Степное,43.4198,46.2324,11986,501,1925-2002,78,299.1,UGMS,Gauging Station measurements
-Russia,Терек,с. Нижний Ларс,42.7877,44.6357,1047,1103,1925-2002,78,26.73,UGMS,Gauging Station measurements
-Russia,Терек,с. Казбеги,42.66,44.6377,778,1316,1925-2002,78,23.79,UGMS,Gauging Station measurements
-Russia,Терек,г.  Владикавказ  (г. Орджоникидзе),43.0409,44.6661,1517,1890,1925-2002,78,33.8,UGMS,Gauging Station measurements
-Russia,Черек,пгт Кашхатау (Советский),43.3093,43.6135,1361,474,1925-2002,78,39.33,UGMS,Gauging Station measurements
-Russia,Кубань,х. Тиховский,45.1868,38.2184,49564,83,1946-2004,58,369.58,"[Magritskii, 2011]",Gauging Station measurements
-Russia,Белая,пгт Каменномостский,44.2988,40.1776,1876,236,"<1984, 2008-2015",54,49.98,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Кума,г. Буденновск,44.7735,44.176,15082,34,"<1984, 2008-2015",50,10.62,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Подкумок,ст-ца Лысогорская (Незлобная),44.1109,43.2917,1991,129,"<1984, 2008-2015",49,7.32,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Белая,х. Кирпичный (Грозный),44.552,40.1449,2311,286,"<1984, 2008-2015",48,54.56,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Кубань,г. Армавир,45.0075,41.1395,16868,185,"<1984, 2008-2015",41,130.59,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Кума,ст-ца Александрийская,44.2148,43.358,3591,52,"<1984, 2008-2012, 2014-2015",41,5.42,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Калаус,г. Светлоград,45.3401,42.8358,4807,95,"<1984, 2010-2015",39,3.39,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Шахе,с. Солох-Аул,43.8103,39.6768,411,511,<1984,37,28.06,State water cadastre,Gauging Station measurements
-Russia,Адагум,г. Крымск,44.9188,37.989,332,108,<1984,34,3.21,State water cadastre,Gauging Station measurements
-Russia,Большой Зеленчук,ст-ца Исправная,44.0782,41.5989,1909,117,<1984,34,40.14,State water cadastre,Gauging Station measurements
-Russia,Кубань,г. Краснодар,44.9915,38.9603,45205,175,<1984,34,389.01,State water cadastre,Gauging Station measurements
-Russia,Лаба,ст-ца Каладжинская,44.3274,40.8702,3350,183,<1984,33,81.63,State water cadastre,Gauging Station measurements
-Russia,Уруп,х. Стеблицкий,44.8968,41.1468,3132,299,"<1984, 2008, 2010-2015",32,16.89,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Мзымта,р. п. Красная поляна,43.6763,40.21,529,410,"<1984, 2012-2015",31,32.05,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Псекупс,г. Горячий ключ,44.645,39.1257,773,204,<1984,31,15.25,State water cadastre,Gauging Station measurements
-Russia,Сочи,с. Пластунка,43.7017,39.7649,233,290,"<1984, 2008-2015",31,15.48,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Кубань,х. Дегтяревский,44.5415,41.9402,7589,170,<1984,29,93.1,State water cadastre,Gauging Station measurements
-Russia,Кубань,с. им. Коста Хетагурова,43.8113,41.9071,3793,130,<1984,29,75.13,State water cadastre,Gauging Station measurements
-Russia,Мзымта,пос. Кепш (Ах-Цу),43.6104,40.0513,807,451,<1984,28,44.86,State water cadastre,Gauging Station measurements
-Russia,Белая,с. Кора-Урсдон,43.0946,44.0898,313,208,"<1984, 2008-2015",27,6.55,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Теберда,г. Теберда,43.4418,41.7411,507,240,<1984,27,26.76,State water cadastre,Gauging Station measurements
-Russia,Кума,с. Владимировка,44.7584,44.7812,19746,16,"<1984, 2010-2015",26,9.94,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Шебш,ст-ца Новодмитриевская,44.8313,38.8732,566,247,<1984,25,7.65,State water cadastre,Gauging Station measurements
-Russia,Кума,с. Стародубское,44.558,44.0357,11026,76,<1984,24,11.79,State water cadastre,Gauging Station measurements
-Russia,Чамлык,ст-ца Вознесенская,44.5477,41.0383,543,74,<1984,24,1.18,State water cadastre,Gauging Station measurements
-Russia,Пшеха,г. Апшеронск,44.4851,39.7439,1493,241,<1984,23,38.36,State water cadastre,Gauging Station measurements
-Russia,Пшеха,с. Чернигорское,44.2492,39.7684,654,249,<1984,22,22.98,State water cadastre,Gauging Station measurements
-Russia,Убинка,ст-ца Северская,44.8633,38.6871,190,217,"<1984, 2008-2011",22,1.45,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Уруп,ст-ца Попутная,44.5106,41.457,2580,156,<1984,22,16.81,State water cadastre,Gauging Station measurements
-Russia,Кубань,г. Усть-Лабинск,45.2065,39.6526,33895,152,<1984,21,225.61,State water cadastre,Gauging Station measurements
-Russia,Терек,г. Моздок,43.7402,44.6985,22412,330,<1984,21,207.02,State water cadastre,Gauging Station measurements
-Russia,Ула,с. Старомарьевка,45.0881,42.2484,313,416,"<1984, 2008-2015",21,0.78,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Курджипс,х. Красно-Октябрьский,44.5842,40.0763,768,141,<1984,20,9.1,State water cadastre,Gauging Station measurements
-Russia,Малый Зеленчук,аул Алибердукский,43.9801,41.7483,1336,131,<1984,20,24.35,State water cadastre,Gauging Station measurements
-Russia,Пшиш,аул Теучежхабль,44.9271,39.5887,1610,433,<1984,20,83.76,State water cadastre,Gauging Station measurements
-Russia,Фарс,ст-ца Дондуковская,44.8773,40.3526,1252,149,"<1984, 2008-2015",20,4.5,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Чегем 1-й,с. Нижний Чегем,43.4886,43.2905,748,355,<1984,20,13.45,State water cadastre,Gauging Station measurements
-Russia,Абин,г. Абинск,44.8606,38.152,426,183,<1984,19,6.48,State water cadastre,Gauging Station measurements
-Russia,Аварское Койсу,с. Голотль,42.4916,46.7456,2962,684,"<1984, 2008-2015",19,66.18,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Афипс,ст-ца Смоленская,44.7952,38.8227,329,102,<1984,19,3.65,State water cadastre,Gauging Station measurements
-Russia,Белая,пос. Гузeрипль,43.99836389,40.1361,579,502,"<1984, 2008-2015",19,28.91,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Калаус,с. Сергиевка,44.9513,42.7172,1804,220,<1984,19,1.67,State water cadastre,Gauging Station measurements
-Russia,Кума,с. Новозаведенное,44.2537,43.6449,6337,107,"<1984, 2008-2015",19,11.94,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Курджипс,ст-ца Нижегородская,44.2886,39.9218,258,195,"<1984, 2008-2015",19,5.74,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Самур,с. Ахты,41.4686,47.7388,2197,1968,"<1984, 2008-2015",19,43.62,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Туапсе,г. Туапсе,44.1266,39.1359,332,396,"<1984, 2013-2015",19,12.81,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Андийское Койсу,c.Чиркота,42.7806,46.7415,4762,1396,"<1984, 2008-2015",18,75.6,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Казикумухское Кой,с. Гергебиль,42.5015,47.0707,1847,720,"<1984, 2008-2015",18,15.33,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Кара-Самур,с. Лучек,41.6223,47.299,480,724,"<1984, 2008-2015",18,8.39,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Лаба,х. Догужиев,45.1366,39.7548,11975,103,"<1984, 2008-2011, 2014-2015",18,93.01,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Самур,с. Усухчай,41.425,47.9278,3607,2515,"<1984, 2008-2015",18,68.47,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Хоста,пос. Хоста,43.5254,39.8753,98,364,"<1984, 2008-2015",18,4.92,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Ахтычай,с. Ахты,41.4568,47.7357,953,3510,"<1984, 2008-2013, 2015",17,16.08,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Гечепсин,с. Молдаванское,44.9448,37.8834,35,72,<1984,17,0.14,State water cadastre,Gauging Station measurements
-Russia,Самур,с. Лучек,41.6131,47.2999,916,1131,"<1984, 2008-2015",17,26.01,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Ташла,с. Донское,45.4563,41.9836,433,25,<1984,17,0.6,State water cadastre,Gauging Station measurements
-Russia,Аварское Койсу,Балаханский мост,42.5744,46.9671,7268,589,"<1984, 2008-2011, 2013-2015",16,111.79,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Урух,с. Хазнидон,43.2132,43.8729,1012,439,"<1984, 2008-2015",16,24.42,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Терек,ст-ца Черноярская,43.681,44.3416,21459,456,<1984,15,244.53,State water cadastre,Gauging Station measurements
-Russia,Худес,пос. Худес,43.5809,42.1521,453,82,<1984,15,5.77,State water cadastre,Gauging Station measurements
-Russia,Иль,пгт Ильский,44.8486,38.5822,115,151,<1984,14,0.94,State water cadastre,Gauging Station measurements
-Russia,Адегой,ст-ца Шапсугская,44.7429,38.0666,122,74,"<1984, 2008-2011, 2015",13,1.99,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Гоначхир,заповедник,43.3308,41.6744,147,638,<1984,13,11.61,State water cadastre,Gauging Station measurements
-Russia,Кума,ст-ца Бекешевская,44.1103,42.4191,415,66,<1984,13,2.16,State water cadastre,Gauging Station measurements
-Russia,Курахчай,с. Курах,41.5762,47.7937,379,929,<1984,13,3.36,State water cadastre,Gauging Station measurements
-Russia,Нальчик,с. Белая Речка,43.4305,43.5267,149,66,<1984,13,2.2,State water cadastre,Gauging Station measurements
-Russia,Фортанга,с. Бамут,43.1582,45.2102,499,922,<1984,13,5.86,State water cadastre,Gauging Station measurements
-Russia,Аксаут,с. Хасаут-Греческое,43.7208,41.6719,564,160,"<1984, 2008-2012",12,15.04,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Белая,с. Сюковская Поляна,44.183,40.1503,1291,204,<1984,12,49.41,State water cadastre,Gauging Station measurements
-Russia,Маруха,с. Маруха,43.754,41.6349,312,151,"<1984, 2008-2014",12,8.07,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Мзымта,пос. Казачий Брод,43.5074,39.9951,862,898,"<1984, 2012-2015",12,49.51,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Андийское Койсу,с. Агвали,42.538,46.1297,2777,1359,<1984,11,64.13,State water cadastre,Gauging Station measurements
-Russia,Большая Лаба,Азиатский мост,43.9026,40.9678,1012,160,<1984,11,40.96,State water cadastre,Gauging Station measurements
-Russia,Желобная,пос. Гузерипль,44.0112,40.137,40,214,<1984,11,1.31,State water cadastre,Gauging Station measurements
-Russia,Киша,Лагерная,44.0539,40.1889,495,67,<1984,11,14.43,State water cadastre,Gauging Station measurements
-Russia,Псезуапсе,с. Татьяновка,43.9573,39.4169,254,296,<1984,11,13.87,State water cadastre,Gauging Station measurements
-Russia,Сочи,г. Сочи,43.5909,39.7218,296,343,<1984,11,16.12,State water cadastre,Gauging Station measurements
-Russia,Томузловка,с. Новоселицкое,44.7578,43.4386,785,28,<1984,11,0.71,State water cadastre,Gauging Station measurements
-Russia,Уруп,ст-ца Удобная,44.2072,41.547,1401,267,<1984,11,13.14,State water cadastre,Gauging Station measurements
-Russia,Яман-Су,х. 2-й Ярмаркин,43.256,46.5419,237,1540,<1984,11,1,State water cadastre,Gauging Station measurements
-Russia,Березовая,г. Кисловодск,43.9106,42.7197,148,38,<1984,10,0.74,State water cadastre,Gauging Station measurements
-Russia,Гастогай,ст-ца Гастогаевская,45.0321,37.4946,77,164,<1984,10,0.28,State water cadastre,Gauging Station measurements
-Russia,Геналдон,с. Тменикау,42.8164,44.5,62,3191,<1984,10,2.69,State water cadastre,Gauging Station measurements
-Russia,Дах,ст-ца Даховская,44.2254,40.2237,370,183,<1984,10,2.88,State water cadastre,Gauging Station measurements
-Russia,Золка,х. Михайловский,44.2002,43.6899,841,5,<1984,10,0.59,State water cadastre,Gauging Station measurements
-Russia,Адерба,пос. Светлый,44.5509,38.1376,67,174,<1984,9,0.85,State water cadastre,Gauging Station measurements
-Russia,Андийское Койсу,с. Тлох,42.6764,46.4702,3932,1111,<1984,9,69.7,State water cadastre,Gauging Station measurements
-Russia,Аргун,с. Советское,42.8764,45.6868,1858,1588,<1984,9,27.36,State water cadastre,Gauging Station measurements
-Russia,Дюрсо,свх Абрау-Дюрсо,44.6929,37.5665,52,24,<1984,9,0.44,State water cadastre,Gauging Station measurements
-Russia,Кубань,х. Важный,43.9938,41.9222,4083,177,<1984,9,77.66,State water cadastre,Gauging Station measurements
-Russia,Кума,с. Отказное (нижний бьеф Отка?,44.301,43.8581,7974,1,<1984,9,13.73,State water cadastre,Gauging Station measurements
-Russia,Подкумок,с. Первомайское,43.937,42.4839,268,49,<1984,9,1.69,State water cadastre,Gauging Station measurements
-Russia,Баксан,"с. Кызбурун I, нов.пост",43.6575,43.4109,2214,440,<1984,8,34.71,State water cadastre,Gauging Station measurements
-Russia,Белая,с. Хамышки (Блокгаузная Карау,44.0995,40.1449,1181,165,<1984,8,44.16,State water cadastre,Gauging Station measurements
-Russia,Вулан,к.п.Архипо-Осиповка,44.3714,38.533,267,212,<1984,8,6.35,State water cadastre,Gauging Station measurements
-Russia,Горькая,х. Грачевка,45.1852,42.4142,851,191,<1984,8,0.99,State water cadastre,Gauging Station measurements
-Russia,Кубань,ст-ца Ладожская,45.2944,39.9443,20087,85,"2008, 2010-2015",8,128.87,AIS GMVO,Gauging Station measurements
-Russia,Кума,х. Золка,44.2769,43.7897,4292,196,<1984,8,12.45,State water cadastre,Gauging Station measurements
-Russia,Аксай,с. Сугунти,43.1352,46.3459,373,1691,<1984,7,10.89,State water cadastre,Gauging Station measurements
-Russia,Акташ,с. Эндирей Аул,43.1673,46.6442,407,961,<1984,7,3.79,State water cadastre,Gauging Station measurements
-Russia,Кубань,с. Успенское,44.8493,41.4005,12919,94,<1984,7,87.15,State water cadastre,Gauging Station measurements
-Russia,Самур,с. Мишлеш,41.6654,47.0653,561,790,<1984,7,21.03,State water cadastre,Gauging Station measurements
-Russia,Аше,с. Аше,43.9587,39.2773,277,209,<1984,6,12.43,State water cadastre,Gauging Station measurements
-Russia,Кизгыч,пгт Архыз,43.5292,41.2909,143,174,<1984,6,7.85,State water cadastre,Gauging Station measurements
-Russia,Кубань,г. Кропоткин,45.423,40.5968,19057,106,<1984,6,107.88,State water cadastre,Gauging Station measurements
-Russia,Кума,г. Зеленокумск,44.421,43.8871,10000,9,"<1984, 2009-2010, 2012-2015",6,12.81,"State water cadastre, AIS GMVO",Gauging Station measurements
-Russia,Лаба,г. Курганинск (ст-ца Курганна?,44.8898,40.5604,4879,82,<1984,6,81.84,State water cadastre,Gauging Station measurements
-Russia,Сулак,с. Миатлы,43.0761,46.8384,13032,758,<1984,5,180.8,State water cadastre,Gauging Station measurements
-Russia,Усухчай,с. Усухчай,41.4056,47.9227,230,2706,<1984,4,5.93,State water cadastre,Gauging Station measurements
-Russia,Кара-Койсу,с. Хиндах,42.3996,46.9787,1581,645,<1984,3,22.71,State water cadastre,Gauging Station measurements
-Russia,Пшиш,г. Хадыженск,44.4215,39.5321,717,572,<1984,2,18.54,State water cadastre,Gauging Station measurements
-Russia,Уллу-Кам,аул Хурзук,43.4383,42.1317,582,195,<1984,2,15.87,State water cadastre,Gauging Station measurements
-Russia,Кубань,г. Карачаевск,43.7658,41.916,2486,98,<1984,1,44.93,State water cadastre,Gauging Station measurements
-Russia,Абин,ст-ца Шапсугская,44.74248333,38.07830833,203,215,"2008-2011, 2014-2015",6,,AIS GMVO,G/S measurements
-Russia,Курах , с. Касумкент,41.67124722,48.13066667,1060,581,2009-2015,7,,AIS GMVO,G/S measurements
-Russia,Чирахчай , с. Куркент,41.70685278,48.10541111,862,103,2010-2015,6,,AIS GMVO,G/S measurements
-Russia,Ардон , п.Мизур,42.85030278,44.05605556,831,276,2008-2011,4,,AIS GMVO,G/S measurements
-Russia,Большой Зеленчук , пгт Архыз,43.55349722,41.27115556,513,433,2008-2013,6,,AIS GMVO,G/S measurements
-Russia,Большой Зеленчук ,ст-ца Зеленчукская,43.88460556,41.56746111,802,107,2008-2013,6,,AIS GMVO,G/S measurements
-Russia,Гизельдон , с.Гизель,43.02394167,44.56297222,410,224,2008-2015,8,,AIS GMVO,G/S measurements
-Russia,Кара Койсу , Гунибский мост,42.38555,46.97030278,1460,661,2008-2015,8,,AIS GMVO,G/S measurements
-Russia,Малка , пос.Хабаз,43.72724444,42.93650556,1080,149,1925-2002,78,,UGMS,G/S measurements
-Russia,Сулак , ПГТ Сулак,43.27048056,47.51295833,15200,141,2008-2015,8,,AIS GMVO,G/S measurements
-Russia,"Терек, рук.Новый Терек ", Каргалинский гидроузел,43.73266944,46.544,37400,417,"1925-2002, 2008-2015",86,,UGMS,G/S measurements
-Russia,Фиагдон , пос.Верхний Фиагдон,42.83178611,44.29750556,238,274,"2008, 2010-2013, 2014-2015",6,,AIS GMVO,G/S measurements
-Russia,Фиагдон , с.Тагардон,42.95936944,44.36843056,410,168,1925-2002,78,,UGMS,G/S measurements
-Russia,Фортанга , с.Бамут,43.16445,45.20894722,498,870,1925-2002,78,,UGMS,G/S measurements
-Russia,Чегем , В.Чегем (Эльтюбю),43.26907222,43.15561944,433,163,1925-2002,78,,UGMS,G/S measurements
-Russia,Чегем1-й,с.Нижний Чегем,43.49211944,43.2914,739,302,2008-2013,6,,AIS GMVO,G/S measurements
-Abhazia,Бзыбь,Джирхва,43.30730278,40.41063333,1410,303,"1934, 1935, 1954-1988",37,97.8,"Khmeleva et. al., 2000",Gauging Station measurements
-Abhazia,Бзыбь,Пицундский мост,43.19363056,40.29605556,1510,470,1972-1988,17,123,"Khmeleva et. al., 2000",Gauging Station measurements
-Abhazia,Анахомста,Устье,43.35901944,40.11850278,15.5,290,NA,NA,0.805,"Khmeleva et. al., 2000",Gauging Station measurements
-Abhazia,Чигирипш,Устье,43.33828889,40.17083611,6.7,290,NA,NA,0.322,"Khmeleva et. al., 2000",Gauging Station measurements
-Georgia,Чорохи,Эрге,41.55,41.7,22000,360,NA,20,,"Dedkov & Mozherin, 1984",
-Georgia,Аджарисцкали,Кеда,41.6,41.95,1360,420,NA,7,,"Dedkov & Mozherin, 1984",
-Georgia,Аджарисцкали,Хуло,41.63933333,42.31684167,251,1500,NA,20,,"Dedkov & Mozherin, 1984",
-Georgia,Абаносцхали,Махиджаури,41.67733889,41.70060556,3.9,150,NA,10,,"Dedkov & Mozherin, 1984",
-Georgia,Кинтриши,Кохи,41.80145556,41.89392222,191,59,NA,12,,"Dedkov & Mozherin, 1984",
-Georgia,Чаквисцхали,Хала,41.70736667,41.78955,120,72,NA,11,,"Dedkov & Mozherin, 1984",
-Georgia,Натанеби,Натанеби,41.91590833,41.80944444,469,130,NA,12,,"Dedkov & Mozherin, 1984",
-Georgia,Супса,Хидмагала,42.03670833,41.79700556,1100,170,NA,15,,"Dedkov & Mozherin, 1984",
-Georgia,Супса,Чохатаури,42.011275,42.236625,316,94,NA,10,,"Dedkov & Mozherin, 1984",
-Georgia,Габазеули,Хидистави,41.97254167,42.21067222,337,170,NA,28,,"Dedkov & Mozherin, 1984",
-Georgia,Риони,Кутаиси,42.247725,42.70117778,3540,890,NA,6,,"Dedkov & Mozherin, 1984",
-Georgia,Риони,Алпана,42.56384444,42.84733889,2830,410,NA,9,,"Dedkov & Mozherin, 1984",
-Georgia,Риони,Намохвани,42.41648056,42.69953611,3450,670,NA,29,,"Dedkov & Mozherin, 1984",
-Georgia,Риони,Они,42.58172778,43.43191111,1060,230,NA,7,,"Dedkov & Mozherin, 1984",
-Georgia,Риони,Уцера,42.63618056,43.545425,707,500,NA,10,,"Dedkov & Mozherin, 1984",
-Georgia,Риони,Геби,42.76815278,43.50390278,222,440,NA,5,,"Dedkov & Mozherin, 1984",
-Georgia,Шараула,Удабно,41.50813611,45.37478889,136,88,NA,6,,"Dedkov & Mozherin, 1984",
-Georgia,Лаянура,Орбели,42.63333333,42.83333333,231,130,NA,16,,"Dedkov & Mozherin, 1984",
-Georgia,Квирила,Нахширгели,42.20666944,42.81678056,3230,630,NA,9,,"Dedkov & Mozherin, 1984",
-Georgia,Квирила,Застафони,42.10300556,43.03156944,2490,680,NA,11,,"Dedkov & Mozherin, 1984",
-Georgia,Дзирули,Цева,42.09362222,43.12925556,1190,160,NA,11,,"Dedkov & Mozherin, 1984",
-Georgia,Ханистскали,Дидвела,42.13228611,42.78001667,907,130,NA,9,,"Dedkov & Mozherin, 1984",
-Georgia,Тскхенистскали,Хиди,42.41750556,42.48135556,1950,270,NA,18,,"Dedkov & Mozherin, 1984",
-Georgia,Тскхенистскали,Зуби,42.56691944,42.6853,1700,1100,NA,11,,"Dedkov & Mozherin, 1984",
-Georgia,Тскхенистскали,Рцхмелури,42.68491389,42.77068611,1450,870,NA,13,,"Dedkov & Mozherin, 1984",
-Georgia,Тскхенистскали,Нагомари,42.66894722,42.76952778,1450,1200,NA,11,,"Dedkov & Mozherin, 1984",
-Georgia,Тскхенистскали,Луджи,42.82183056,42.95602222,506,400,NA,2,,"Dedkov & Mozherin, 1984",
-Georgia,Текхери,Накалаке,42.36676667,42.19566111,558,380,NA,7,,"Dedkov & Mozherin, 1984",
-Georgia,Ингури,Анаклия,42.40475833,41.57193611,4040,470,NA,12,,"Dedkov & Mozherin, 1984",
-Georgia,Ингури,Дарчели,42.42958889,41.662525,3640,680,NA,18,,"Dedkov & Mozherin, 1984",
-Georgia,Ингури,Джвари,42.72176111,42.03138056,3170,580,NA,7,,"Dedkov & Mozherin, 1984",
-Georgia,Ингури,Хаиши,42.94546111,42.1844,2780,270,NA,10,,"Dedkov & Mozherin, 1984",
-Georgia,Ингури,Дизи,43.03760556,42.34795,1760,550,NA,19,,"Dedkov & Mozherin, 1984",
-Georgia,Долра,Бечо,43.03358889,42.58480556,146,320,NA,8,,"Dedkov & Mozherin, 1984",
-Georgia,Б. Эристскали,Речкхи,42.65232222,41.76360833,163,310,NA,8,,"Dedkov & Mozherin, 1984",
-Abhazia,Кодори,Варча,42.83165278,41.15525833,2020,410,NA,9,,"Dedkov & Mozherin, 1984",
-Abhazia,Кодори,Лата,43.03053333,41.48016944,1420,400,NA,10,,"Dedkov & Mozherin, 1984",
-Abhazia,Гумиста,Ачадара,43.04068056,40.968875,556,170,NA,10,,"Dedkov & Mozherin, 1984",
+Russia,Р§РµСЂРµРє Р‘Р°Р»РєР°СЂСЃРєРёР№,СЃ. Р‘Р°Р±СѓРіРµРЅС‚,43.2536,43.5446,694,793,1925-2013,89,26.31,UGMS,Gauging Station measurements
+Russia,РўРµСЂРµРє,СЃС‚. РљРѕС‚Р»СЏСЂРµРІСЃРєР°СЏ,43.5731,44.0766,8782,539,"1925-2002, 2008-2015",86,132.1,UGMS,Gauging Station measurements
+Russia,РљР°РјР±РёР»РµРµРІРєР°,СЃ. РћР»СЊРіРёРЅСЃРєРѕРµ,43.1643,44.6962,329,141,"1925-2002, 2008-2012, 2014-2015 ",84,3.23,UGMS,Gauging Station measurements
+Russia,РњР°Р»РєР°,СЃС‚. РџСЂРѕС…Р»Р°РґРЅР°СЏ,43.7441,44.0839,11488,481.5,"1925-2002, 2008-2013",84,96.62,UGMS,Gauging Station measurements
+Russia,РњР°Р»РєР°,СЃ. РљР°РјРµРЅРЅРѕРјРѕСЃС‚СЃРєРѕРµ,43.7334,43.0661,1548,118,"1925-2002, 2008-2013",84,13.93,UGMS,Gauging Station measurements
+Russia,РђСЂРіСѓРЅ,СЃ. Р”СѓР±Р°-Р®СЂС‚,43.031,45.7216,3182,980,1925-2002,78,45.63,UGMS,Gauging Station measurements
+Russia,РђСЂРґРѕРЅ,СЃ. РўР°РјРёСЃРє,42.9684,44.218,1139,680,1925-2002,78,29.02,UGMS,Gauging Station measurements
+Russia,РђСЃСЃР°,СЃ. РњСѓР¶РёС‡Рё,43.0297,44.9974,764,183,1925-2002,78,15.28,UGMS,Gauging Station measurements
+Russia,РђСЃСЃР°,СЃС‚-С†Р° РќРµСЃС‚РµСЂРѕРІСЃРєР°СЏ,43.225,45.0578,908,414,1925-2002,78,16.84,UGMS,Gauging Station measurements
+Russia,Р‘Р°РєСЃР°РЅ,СЃ. Р—Р°СЋРєРѕРІРѕ,43.6061,43.3391,2172,311,1925-2002,78,33.58,UGMS,Gauging Station measurements
+Russia,Р‘РµР»РєР°,Рі. Р“СѓРґРµСЂРјРµСЃ,43.3512,46.0806,1201,953,1925-2002,78,4.36,UGMS,Gauging Station measurements
+Russia,Р“РёР·РµР»СЊРґРѕРЅ,СЃ. Р”Р°СЂРіР°РІСЃ,42.8411,44.4421,132,423,1925-2002,78,2.9,UGMS,Gauging Station measurements
+Russia,РЎСѓРЅР¶Р°,СЃ. Р‘СЂР°РіСѓРЅС‹,43.4338,46.1006,12200,723,1925-2002,78,84.34,UGMS,Gauging Station measurements
+Russia,РЎСѓРЅР¶Р°,РїРіС‚ РљР°СЂР°Р±СѓР»Р°Рє,43.2979,44.9062,602,76,1925-2002,78,2.89,UGMS,Gauging Station measurements
+Russia,РЎСѓРЅР¶Р°,Рі. Р“СЂРѕР·РЅС‹Р№,43.3013,45.6878,4709,452,1925-2002,78,36.16,UGMS,Gauging Station measurements
+Russia,РўРµСЂРµРє,СЃ. Р­Р»СЊС…РѕС‚РѕРІРѕ,43.3605,44.1822,6754,323,1925-2002,78,102.75,UGMS,Gauging Station measurements
+Russia,РўРµСЂРµРє,СЃ. РЎС‚РµРїРЅРѕРµ,43.4198,46.2324,11986,501,1925-2002,78,299.1,UGMS,Gauging Station measurements
+Russia,РўРµСЂРµРє,СЃ. РќРёР¶РЅРёР№ Р›Р°СЂСЃ,42.7877,44.6357,1047,1103,1925-2002,78,26.73,UGMS,Gauging Station measurements
+Russia,РўРµСЂРµРє,СЃ. РљР°Р·Р±РµРіРё,42.66,44.6377,778,1316,1925-2002,78,23.79,UGMS,Gauging Station measurements
+Russia,РўРµСЂРµРє,Рі.  Р’Р»Р°РґРёРєР°РІРєР°Р·  (Рі. РћСЂРґР¶РѕРЅРёРєРёРґР·Рµ),43.0409,44.6661,1517,1890,1925-2002,78,33.8,UGMS,Gauging Station measurements
+Russia,Р§РµСЂРµРє,РїРіС‚ РљР°С€С…Р°С‚Р°Сѓ (РЎРѕРІРµС‚СЃРєРёР№),43.3093,43.6135,1361,474,1925-2002,78,39.33,UGMS,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,С…. РўРёС…РѕРІСЃРєРёР№,45.1868,38.2184,49564,83,1946-2004,58,369.58,"[Magritskii, 2011]",Gauging Station measurements
+Russia,Р‘РµР»Р°СЏ,РїРіС‚ РљР°РјРµРЅРЅРѕРјРѕСЃС‚СЃРєРёР№,44.2988,40.1776,1876,236,"<1984, 2008-2015",54,49.98,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљСѓРјР°,Рі. Р‘СѓРґРµРЅРЅРѕРІСЃРє,44.7735,44.176,15082,34,"<1984, 2008-2015",50,10.62,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РџРѕРґРєСѓРјРѕРє,СЃС‚-С†Р° Р›С‹СЃРѕРіРѕСЂСЃРєР°СЏ (РќРµР·Р»РѕР±РЅР°СЏ),44.1109,43.2917,1991,129,"<1984, 2008-2015",49,7.32,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,Р‘РµР»Р°СЏ,С…. РљРёСЂРїРёС‡РЅС‹Р№ (Р“СЂРѕР·РЅС‹Р№),44.552,40.1449,2311,286,"<1984, 2008-2015",48,54.56,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,Рі. РђСЂРјР°РІРёСЂ,45.0075,41.1395,16868,185,"<1984, 2008-2015",41,130.59,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљСѓРјР°,СЃС‚-С†Р° РђР»РµРєСЃР°РЅРґСЂРёР№СЃРєР°СЏ,44.2148,43.358,3591,52,"<1984, 2008-2012, 2014-2015",41,5.42,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљР°Р»Р°СѓСЃ,Рі. РЎРІРµС‚Р»РѕРіСЂР°Рґ,45.3401,42.8358,4807,95,"<1984, 2010-2015",39,3.39,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РЁР°С…Рµ,СЃ. РЎРѕР»РѕС…-РђСѓР»,43.8103,39.6768,411,511,<1984,37,28.06,State water cadastre,Gauging Station measurements
+Russia,РђРґР°РіСѓРј,Рі. РљСЂС‹РјСЃРє,44.9188,37.989,332,108,<1984,34,3.21,State water cadastre,Gauging Station measurements
+Russia,Р‘РѕР»СЊС€РѕР№ Р—РµР»РµРЅС‡СѓРє,СЃС‚-С†Р° РСЃРїСЂР°РІРЅР°СЏ,44.0782,41.5989,1909,117,<1984,34,40.14,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,Рі. РљСЂР°СЃРЅРѕРґР°СЂ,44.9915,38.9603,45205,175,<1984,34,389.01,State water cadastre,Gauging Station measurements
+Russia,Р›Р°Р±Р°,СЃС‚-С†Р° РљР°Р»Р°РґР¶РёРЅСЃРєР°СЏ,44.3274,40.8702,3350,183,<1984,33,81.63,State water cadastre,Gauging Station measurements
+Russia,РЈСЂСѓРї,С…. РЎС‚РµР±Р»РёС†РєРёР№,44.8968,41.1468,3132,299,"<1984, 2008, 2010-2015",32,16.89,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РњР·С‹РјС‚Р°,СЂ. Рї. РљСЂР°СЃРЅР°СЏ РїРѕР»СЏРЅР°,43.6763,40.21,529,410,"<1984, 2012-2015",31,32.05,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РџСЃРµРєСѓРїСЃ,Рі. Р“РѕСЂСЏС‡РёР№ РєР»СЋС‡,44.645,39.1257,773,204,<1984,31,15.25,State water cadastre,Gauging Station measurements
+Russia,РЎРѕС‡Рё,СЃ. РџР»Р°СЃС‚СѓРЅРєР°,43.7017,39.7649,233,290,"<1984, 2008-2015",31,15.48,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,С…. Р”РµРіС‚СЏСЂРµРІСЃРєРёР№,44.5415,41.9402,7589,170,<1984,29,93.1,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,СЃ. РёРј. РљРѕСЃС‚Р° РҐРµС‚Р°РіСѓСЂРѕРІР°,43.8113,41.9071,3793,130,<1984,29,75.13,State water cadastre,Gauging Station measurements
+Russia,РњР·С‹РјС‚Р°,РїРѕСЃ. РљРµРїС€ (РђС…-Р¦Сѓ),43.6104,40.0513,807,451,<1984,28,44.86,State water cadastre,Gauging Station measurements
+Russia,Р‘РµР»Р°СЏ,СЃ. РљРѕСЂР°-РЈСЂСЃРґРѕРЅ,43.0946,44.0898,313,208,"<1984, 2008-2015",27,6.55,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РўРµР±РµСЂРґР°,Рі. РўРµР±РµСЂРґР°,43.4418,41.7411,507,240,<1984,27,26.76,State water cadastre,Gauging Station measurements
+Russia,РљСѓРјР°,СЃ. Р’Р»Р°РґРёРјРёСЂРѕРІРєР°,44.7584,44.7812,19746,16,"<1984, 2010-2015",26,9.94,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РЁРµР±С€,СЃС‚-С†Р° РќРѕРІРѕРґРјРёС‚СЂРёРµРІСЃРєР°СЏ,44.8313,38.8732,566,247,<1984,25,7.65,State water cadastre,Gauging Station measurements
+Russia,РљСѓРјР°,СЃ. РЎС‚Р°СЂРѕРґСѓР±СЃРєРѕРµ,44.558,44.0357,11026,76,<1984,24,11.79,State water cadastre,Gauging Station measurements
+Russia,Р§Р°РјР»С‹Рє,СЃС‚-С†Р° Р’РѕР·РЅРµСЃРµРЅСЃРєР°СЏ,44.5477,41.0383,543,74,<1984,24,1.18,State water cadastre,Gauging Station measurements
+Russia,РџС€РµС…Р°,Рі. РђРїС€РµСЂРѕРЅСЃРє,44.4851,39.7439,1493,241,<1984,23,38.36,State water cadastre,Gauging Station measurements
+Russia,РџС€РµС…Р°,СЃ. Р§РµСЂРЅРёРіРѕСЂСЃРєРѕРµ,44.2492,39.7684,654,249,<1984,22,22.98,State water cadastre,Gauging Station measurements
+Russia,РЈР±РёРЅРєР°,СЃС‚-С†Р° РЎРµРІРµСЂСЃРєР°СЏ,44.8633,38.6871,190,217,"<1984, 2008-2011",22,1.45,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РЈСЂСѓРї,СЃС‚-С†Р° РџРѕРїСѓС‚РЅР°СЏ,44.5106,41.457,2580,156,<1984,22,16.81,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,Рі. РЈСЃС‚СЊ-Р›Р°Р±РёРЅСЃРє,45.2065,39.6526,33895,152,<1984,21,225.61,State water cadastre,Gauging Station measurements
+Russia,РўРµСЂРµРє,Рі. РњРѕР·РґРѕРє,43.7402,44.6985,22412,330,<1984,21,207.02,State water cadastre,Gauging Station measurements
+Russia,РЈР»Р°,СЃ. РЎС‚Р°СЂРѕРјР°СЂСЊРµРІРєР°,45.0881,42.2484,313,416,"<1984, 2008-2015",21,0.78,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљСѓСЂРґР¶РёРїСЃ,С…. РљСЂР°СЃРЅРѕ-РћРєС‚СЏР±СЂСЊСЃРєРёР№,44.5842,40.0763,768,141,<1984,20,9.1,State water cadastre,Gauging Station measurements
+Russia,РњР°Р»С‹Р№ Р—РµР»РµРЅС‡СѓРє,Р°СѓР» РђР»РёР±РµСЂРґСѓРєСЃРєРёР№,43.9801,41.7483,1336,131,<1984,20,24.35,State water cadastre,Gauging Station measurements
+Russia,РџС€РёС€,Р°СѓР» РўРµСѓС‡РµР¶С…Р°Р±Р»СЊ,44.9271,39.5887,1610,433,<1984,20,83.76,State water cadastre,Gauging Station measurements
+Russia,Р¤Р°СЂСЃ,СЃС‚-С†Р° Р”РѕРЅРґСѓРєРѕРІСЃРєР°СЏ,44.8773,40.3526,1252,149,"<1984, 2008-2015",20,4.5,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,Р§РµРіРµРј 1-Р№,СЃ. РќРёР¶РЅРёР№ Р§РµРіРµРј,43.4886,43.2905,748,355,<1984,20,13.45,State water cadastre,Gauging Station measurements
+Russia,РђР±РёРЅ,Рі. РђР±РёРЅСЃРє,44.8606,38.152,426,183,<1984,19,6.48,State water cadastre,Gauging Station measurements
+Russia,РђРІР°СЂСЃРєРѕРµ РљРѕР№СЃСѓ,СЃ. Р“РѕР»РѕС‚Р»СЊ,42.4916,46.7456,2962,684,"<1984, 2008-2015",19,66.18,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РђС„РёРїСЃ,СЃС‚-С†Р° РЎРјРѕР»РµРЅСЃРєР°СЏ,44.7952,38.8227,329,102,<1984,19,3.65,State water cadastre,Gauging Station measurements
+Russia,Р‘РµР»Р°СЏ,РїРѕСЃ. Р“СѓР·eСЂРёРїР»СЊ,43.99836389,40.1361,579,502,"<1984, 2008-2015",19,28.91,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљР°Р»Р°СѓСЃ,СЃ. РЎРµСЂРіРёРµРІРєР°,44.9513,42.7172,1804,220,<1984,19,1.67,State water cadastre,Gauging Station measurements
+Russia,РљСѓРјР°,СЃ. РќРѕРІРѕР·Р°РІРµРґРµРЅРЅРѕРµ,44.2537,43.6449,6337,107,"<1984, 2008-2015",19,11.94,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљСѓСЂРґР¶РёРїСЃ,СЃС‚-С†Р° РќРёР¶РµРіРѕСЂРѕРґСЃРєР°СЏ,44.2886,39.9218,258,195,"<1984, 2008-2015",19,5.74,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РЎР°РјСѓСЂ,СЃ. РђС…С‚С‹,41.4686,47.7388,2197,1968,"<1984, 2008-2015",19,43.62,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РўСѓР°РїСЃРµ,Рі. РўСѓР°РїСЃРµ,44.1266,39.1359,332,396,"<1984, 2013-2015",19,12.81,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РђРЅРґРёР№СЃРєРѕРµ РљРѕР№СЃСѓ,c.Р§РёСЂРєРѕС‚Р°,42.7806,46.7415,4762,1396,"<1984, 2008-2015",18,75.6,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљР°Р·РёРєСѓРјСѓС…СЃРєРѕРµ РљРѕР№,СЃ. Р“РµСЂРіРµР±РёР»СЊ,42.5015,47.0707,1847,720,"<1984, 2008-2015",18,15.33,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РљР°СЂР°-РЎР°РјСѓСЂ,СЃ. Р›СѓС‡РµРє,41.6223,47.299,480,724,"<1984, 2008-2015",18,8.39,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,Р›Р°Р±Р°,С…. Р”РѕРіСѓР¶РёРµРІ,45.1366,39.7548,11975,103,"<1984, 2008-2011, 2014-2015",18,93.01,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РЎР°РјСѓСЂ,СЃ. РЈСЃСѓС…С‡Р°Р№,41.425,47.9278,3607,2515,"<1984, 2008-2015",18,68.47,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РҐРѕСЃС‚Р°,РїРѕСЃ. РҐРѕСЃС‚Р°,43.5254,39.8753,98,364,"<1984, 2008-2015",18,4.92,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РђС…С‚С‹С‡Р°Р№,СЃ. РђС…С‚С‹,41.4568,47.7357,953,3510,"<1984, 2008-2013, 2015",17,16.08,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,Р“РµС‡РµРїСЃРёРЅ,СЃ. РњРѕР»РґР°РІР°РЅСЃРєРѕРµ,44.9448,37.8834,35,72,<1984,17,0.14,State water cadastre,Gauging Station measurements
+Russia,РЎР°РјСѓСЂ,СЃ. Р›СѓС‡РµРє,41.6131,47.2999,916,1131,"<1984, 2008-2015",17,26.01,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РўР°С€Р»Р°,СЃ. Р”РѕРЅСЃРєРѕРµ,45.4563,41.9836,433,25,<1984,17,0.6,State water cadastre,Gauging Station measurements
+Russia,РђРІР°СЂСЃРєРѕРµ РљРѕР№СЃСѓ,Р‘Р°Р»Р°С…Р°РЅСЃРєРёР№ РјРѕСЃС‚,42.5744,46.9671,7268,589,"<1984, 2008-2011, 2013-2015",16,111.79,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РЈСЂСѓС…,СЃ. РҐР°Р·РЅРёРґРѕРЅ,43.2132,43.8729,1012,439,"<1984, 2008-2015",16,24.42,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РўРµСЂРµРє,СЃС‚-С†Р° Р§РµСЂРЅРѕСЏСЂСЃРєР°СЏ,43.681,44.3416,21459,456,<1984,15,244.53,State water cadastre,Gauging Station measurements
+Russia,РҐСѓРґРµСЃ,РїРѕСЃ. РҐСѓРґРµСЃ,43.5809,42.1521,453,82,<1984,15,5.77,State water cadastre,Gauging Station measurements
+Russia,РР»СЊ,РїРіС‚ РР»СЊСЃРєРёР№,44.8486,38.5822,115,151,<1984,14,0.94,State water cadastre,Gauging Station measurements
+Russia,РђРґРµРіРѕР№,СЃС‚-С†Р° РЁР°РїСЃСѓРіСЃРєР°СЏ,44.7429,38.0666,122,74,"<1984, 2008-2011, 2015",13,1.99,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,Р“РѕРЅР°С‡С…РёСЂ,Р·Р°РїРѕРІРµРґРЅРёРє,43.3308,41.6744,147,638,<1984,13,11.61,State water cadastre,Gauging Station measurements
+Russia,РљСѓРјР°,СЃС‚-С†Р° Р‘РµРєРµС€РµРІСЃРєР°СЏ,44.1103,42.4191,415,66,<1984,13,2.16,State water cadastre,Gauging Station measurements
+Russia,РљСѓСЂР°С…С‡Р°Р№,СЃ. РљСѓСЂР°С…,41.5762,47.7937,379,929,<1984,13,3.36,State water cadastre,Gauging Station measurements
+Russia,РќР°Р»СЊС‡РёРє,СЃ. Р‘РµР»Р°СЏ Р РµС‡РєР°,43.4305,43.5267,149,66,<1984,13,2.2,State water cadastre,Gauging Station measurements
+Russia,Р¤РѕСЂС‚Р°РЅРіР°,СЃ. Р‘Р°РјСѓС‚,43.1582,45.2102,499,922,<1984,13,5.86,State water cadastre,Gauging Station measurements
+Russia,РђРєСЃР°СѓС‚,СЃ. РҐР°СЃР°СѓС‚-Р“СЂРµС‡РµСЃРєРѕРµ,43.7208,41.6719,564,160,"<1984, 2008-2012",12,15.04,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,Р‘РµР»Р°СЏ,СЃ. РЎСЋРєРѕРІСЃРєР°СЏ РџРѕР»СЏРЅР°,44.183,40.1503,1291,204,<1984,12,49.41,State water cadastre,Gauging Station measurements
+Russia,РњР°СЂСѓС…Р°,СЃ. РњР°СЂСѓС…Р°,43.754,41.6349,312,151,"<1984, 2008-2014",12,8.07,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РњР·С‹РјС‚Р°,РїРѕСЃ. РљР°Р·Р°С‡РёР№ Р‘СЂРѕРґ,43.5074,39.9951,862,898,"<1984, 2012-2015",12,49.51,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,РђРЅРґРёР№СЃРєРѕРµ РљРѕР№СЃСѓ,СЃ. РђРіРІР°Р»Рё,42.538,46.1297,2777,1359,<1984,11,64.13,State water cadastre,Gauging Station measurements
+Russia,Р‘РѕР»СЊС€Р°СЏ Р›Р°Р±Р°,РђР·РёР°С‚СЃРєРёР№ РјРѕСЃС‚,43.9026,40.9678,1012,160,<1984,11,40.96,State water cadastre,Gauging Station measurements
+Russia,Р–РµР»РѕР±РЅР°СЏ,РїРѕСЃ. Р“СѓР·РµСЂРёРїР»СЊ,44.0112,40.137,40,214,<1984,11,1.31,State water cadastre,Gauging Station measurements
+Russia,РљРёС€Р°,Р›Р°РіРµСЂРЅР°СЏ,44.0539,40.1889,495,67,<1984,11,14.43,State water cadastre,Gauging Station measurements
+Russia,РџСЃРµР·СѓР°РїСЃРµ,СЃ. РўР°С‚СЊСЏРЅРѕРІРєР°,43.9573,39.4169,254,296,<1984,11,13.87,State water cadastre,Gauging Station measurements
+Russia,РЎРѕС‡Рё,Рі. РЎРѕС‡Рё,43.5909,39.7218,296,343,<1984,11,16.12,State water cadastre,Gauging Station measurements
+Russia,РўРѕРјСѓР·Р»РѕРІРєР°,СЃ. РќРѕРІРѕСЃРµР»РёС†РєРѕРµ,44.7578,43.4386,785,28,<1984,11,0.71,State water cadastre,Gauging Station measurements
+Russia,РЈСЂСѓРї,СЃС‚-С†Р° РЈРґРѕР±РЅР°СЏ,44.2072,41.547,1401,267,<1984,11,13.14,State water cadastre,Gauging Station measurements
+Russia,РЇРјР°РЅ-РЎСѓ,С…. 2-Р№ РЇСЂРјР°СЂРєРёРЅ,43.256,46.5419,237,1540,<1984,11,1,State water cadastre,Gauging Station measurements
+Russia,Р‘РµСЂРµР·РѕРІР°СЏ,Рі. РљРёСЃР»РѕРІРѕРґСЃРє,43.9106,42.7197,148,38,<1984,10,0.74,State water cadastre,Gauging Station measurements
+Russia,Р“Р°СЃС‚РѕРіР°Р№,СЃС‚-С†Р° Р“Р°СЃС‚РѕРіР°РµРІСЃРєР°СЏ,45.0321,37.4946,77,164,<1984,10,0.28,State water cadastre,Gauging Station measurements
+Russia,Р“РµРЅР°Р»РґРѕРЅ,СЃ. РўРјРµРЅРёРєР°Сѓ,42.8164,44.5,62,3191,<1984,10,2.69,State water cadastre,Gauging Station measurements
+Russia,Р”Р°С…,СЃС‚-С†Р° Р”Р°С…РѕРІСЃРєР°СЏ,44.2254,40.2237,370,183,<1984,10,2.88,State water cadastre,Gauging Station measurements
+Russia,Р—РѕР»РєР°,С…. РњРёС…Р°Р№Р»РѕРІСЃРєРёР№,44.2002,43.6899,841,5,<1984,10,0.59,State water cadastre,Gauging Station measurements
+Russia,РђРґРµСЂР±Р°,РїРѕСЃ. РЎРІРµС‚Р»С‹Р№,44.5509,38.1376,67,174,<1984,9,0.85,State water cadastre,Gauging Station measurements
+Russia,РђРЅРґРёР№СЃРєРѕРµ РљРѕР№СЃСѓ,СЃ. РўР»РѕС…,42.6764,46.4702,3932,1111,<1984,9,69.7,State water cadastre,Gauging Station measurements
+Russia,РђСЂРіСѓРЅ,СЃ. РЎРѕРІРµС‚СЃРєРѕРµ,42.8764,45.6868,1858,1588,<1984,9,27.36,State water cadastre,Gauging Station measurements
+Russia,Р”СЋСЂСЃРѕ,СЃРІС… РђР±СЂР°Сѓ-Р”СЋСЂСЃРѕ,44.6929,37.5665,52,24,<1984,9,0.44,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,С…. Р’Р°Р¶РЅС‹Р№,43.9938,41.9222,4083,177,<1984,9,77.66,State water cadastre,Gauging Station measurements
+Russia,РљСѓРјР°,СЃ. РћС‚РєР°Р·РЅРѕРµ (РЅРёР¶РЅРёР№ Р±СЊРµС„ РћС‚РєР°?,44.301,43.8581,7974,1,<1984,9,13.73,State water cadastre,Gauging Station measurements
+Russia,РџРѕРґРєСѓРјРѕРє,СЃ. РџРµСЂРІРѕРјР°Р№СЃРєРѕРµ,43.937,42.4839,268,49,<1984,9,1.69,State water cadastre,Gauging Station measurements
+Russia,Р‘Р°РєСЃР°РЅ,"СЃ. РљС‹Р·Р±СѓСЂСѓРЅ I, РЅРѕРІ.РїРѕСЃС‚",43.6575,43.4109,2214,440,<1984,8,34.71,State water cadastre,Gauging Station measurements
+Russia,Р‘РµР»Р°СЏ,СЃ. РҐР°РјС‹С€РєРё (Р‘Р»РѕРєРіР°СѓР·РЅР°СЏ РљР°СЂР°Сѓ,44.0995,40.1449,1181,165,<1984,8,44.16,State water cadastre,Gauging Station measurements
+Russia,Р’СѓР»Р°РЅ,Рє.Рї.РђСЂС…РёРїРѕ-РћСЃРёРїРѕРІРєР°,44.3714,38.533,267,212,<1984,8,6.35,State water cadastre,Gauging Station measurements
+Russia,Р“РѕСЂСЊРєР°СЏ,С…. Р“СЂР°С‡РµРІРєР°,45.1852,42.4142,851,191,<1984,8,0.99,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,СЃС‚-С†Р° Р›Р°РґРѕР¶СЃРєР°СЏ,45.2944,39.9443,20087,85,"2008, 2010-2015",8,128.87,AIS GMVO,Gauging Station measurements
+Russia,РљСѓРјР°,С…. Р—РѕР»РєР°,44.2769,43.7897,4292,196,<1984,8,12.45,State water cadastre,Gauging Station measurements
+Russia,РђРєСЃР°Р№,СЃ. РЎСѓРіСѓРЅС‚Рё,43.1352,46.3459,373,1691,<1984,7,10.89,State water cadastre,Gauging Station measurements
+Russia,РђРєС‚Р°С€,СЃ. Р­РЅРґРёСЂРµР№ РђСѓР»,43.1673,46.6442,407,961,<1984,7,3.79,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,СЃ. РЈСЃРїРµРЅСЃРєРѕРµ,44.8493,41.4005,12919,94,<1984,7,87.15,State water cadastre,Gauging Station measurements
+Russia,РЎР°РјСѓСЂ,СЃ. РњРёС€Р»РµС€,41.6654,47.0653,561,790,<1984,7,21.03,State water cadastre,Gauging Station measurements
+Russia,РђС€Рµ,СЃ. РђС€Рµ,43.9587,39.2773,277,209,<1984,6,12.43,State water cadastre,Gauging Station measurements
+Russia,РљРёР·РіС‹С‡,РїРіС‚ РђСЂС…С‹Р·,43.5292,41.2909,143,174,<1984,6,7.85,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,Рі. РљСЂРѕРїРѕС‚РєРёРЅ,45.423,40.5968,19057,106,<1984,6,107.88,State water cadastre,Gauging Station measurements
+Russia,РљСѓРјР°,Рі. Р—РµР»РµРЅРѕРєСѓРјСЃРє,44.421,43.8871,10000,9,"<1984, 2009-2010, 2012-2015",6,12.81,"State water cadastre, AIS GMVO",Gauging Station measurements
+Russia,Р›Р°Р±Р°,Рі. РљСѓСЂРіР°РЅРёРЅСЃРє (СЃС‚-С†Р° РљСѓСЂРіР°РЅРЅР°?,44.8898,40.5604,4879,82,<1984,6,81.84,State water cadastre,Gauging Station measurements
+Russia,РЎСѓР»Р°Рє,СЃ. РњРёР°С‚Р»С‹,43.0761,46.8384,13032,758,<1984,5,180.8,State water cadastre,Gauging Station measurements
+Russia,РЈСЃСѓС…С‡Р°Р№,СЃ. РЈСЃСѓС…С‡Р°Р№,41.4056,47.9227,230,2706,<1984,4,5.93,State water cadastre,Gauging Station measurements
+Russia,РљР°СЂР°-РљРѕР№СЃСѓ,СЃ. РҐРёРЅРґР°С…,42.3996,46.9787,1581,645,<1984,3,22.71,State water cadastre,Gauging Station measurements
+Russia,РџС€РёС€,Рі. РҐР°РґС‹Р¶РµРЅСЃРє,44.4215,39.5321,717,572,<1984,2,18.54,State water cadastre,Gauging Station measurements
+Russia,РЈР»Р»Сѓ-РљР°Рј,Р°СѓР» РҐСѓСЂР·СѓРє,43.4383,42.1317,582,195,<1984,2,15.87,State water cadastre,Gauging Station measurements
+Russia,РљСѓР±Р°РЅСЊ,Рі. РљР°СЂР°С‡Р°РµРІСЃРє,43.7658,41.916,2486,98,<1984,1,44.93,State water cadastre,Gauging Station measurements
+Russia,РђР±РёРЅ,СЃС‚-С†Р° РЁР°РїСЃСѓРіСЃРєР°СЏ,44.74248333,38.07830833,203,215,"2008-2011, 2014-2015",6,,AIS GMVO,G/S measurements
+Russia,РљСѓСЂР°С… , СЃ. РљР°СЃСѓРјРєРµРЅС‚,41.67124722,48.13066667,1060,581,2009-2015,7,,AIS GMVO,G/S measurements
+Russia,Р§РёСЂР°С…С‡Р°Р№ , СЃ. РљСѓСЂРєРµРЅС‚,41.70685278,48.10541111,862,103,2010-2015,6,,AIS GMVO,G/S measurements
+Russia,РђСЂРґРѕРЅ , Рї.РњРёР·СѓСЂ,42.85030278,44.05605556,831,276,2008-2011,4,,AIS GMVO,G/S measurements
+Russia,Р‘РѕР»СЊС€РѕР№ Р—РµР»РµРЅС‡СѓРє , РїРіС‚ РђСЂС…С‹Р·,43.55349722,41.27115556,513,433,2008-2013,6,,AIS GMVO,G/S measurements
+Russia,Р‘РѕР»СЊС€РѕР№ Р—РµР»РµРЅС‡СѓРє ,СЃС‚-С†Р° Р—РµР»РµРЅС‡СѓРєСЃРєР°СЏ,43.88460556,41.56746111,802,107,2008-2013,6,,AIS GMVO,G/S measurements
+Russia,Р“РёР·РµР»СЊРґРѕРЅ , СЃ.Р“РёР·РµР»СЊ,43.02394167,44.56297222,410,224,2008-2015,8,,AIS GMVO,G/S measurements
+Russia,РљР°СЂР° РљРѕР№СЃСѓ , Р“СѓРЅРёР±СЃРєРёР№ РјРѕСЃС‚,42.38555,46.97030278,1460,661,2008-2015,8,,AIS GMVO,G/S measurements
+Russia,РњР°Р»РєР° , РїРѕСЃ.РҐР°Р±Р°Р·,43.72724444,42.93650556,1080,149,1925-2002,78,,UGMS,G/S measurements
+Russia,РЎСѓР»Р°Рє , РџР“Рў РЎСѓР»Р°Рє,43.27048056,47.51295833,15200,141,2008-2015,8,,AIS GMVO,G/S measurements
+Russia,"РўРµСЂРµРє, СЂСѓРє.РќРѕРІС‹Р№ РўРµСЂРµРє ", РљР°СЂРіР°Р»РёРЅСЃРєРёР№ РіРёРґСЂРѕСѓР·РµР»,43.73266944,46.544,37400,417,"1925-2002, 2008-2015",86,,UGMS,G/S measurements
+Russia,Р¤РёР°РіРґРѕРЅ , РїРѕСЃ.Р’РµСЂС…РЅРёР№ Р¤РёР°РіРґРѕРЅ,42.83178611,44.29750556,238,274,"2008, 2010-2013, 2014-2015",6,,AIS GMVO,G/S measurements
+Russia,Р¤РёР°РіРґРѕРЅ , СЃ.РўР°РіР°СЂРґРѕРЅ,42.95936944,44.36843056,410,168,1925-2002,78,,UGMS,G/S measurements
+Russia,Р¤РѕСЂС‚Р°РЅРіР° , СЃ.Р‘Р°РјСѓС‚,43.16445,45.20894722,498,870,1925-2002,78,,UGMS,G/S measurements
+Russia,Р§РµРіРµРј , Р’.Р§РµРіРµРј (Р­Р»СЊС‚СЋР±СЋ),43.26907222,43.15561944,433,163,1925-2002,78,,UGMS,G/S measurements
+Russia,Р§РµРіРµРј1-Р№,СЃ.РќРёР¶РЅРёР№ Р§РµРіРµРј,43.49211944,43.2914,739,302,2008-2013,6,,AIS GMVO,G/S measurements
+Abhazia,Р‘Р·С‹Р±СЊ,Р”Р¶РёСЂС…РІР°,43.30730278,40.41063333,1410,303,"1934, 1935, 1954-1988",37,97.8,"Khmeleva et. al., 2000",Gauging Station measurements
+Abhazia,Р‘Р·С‹Р±СЊ,РџРёС†СѓРЅРґСЃРєРёР№ РјРѕСЃС‚,43.19363056,40.29605556,1510,470,1972-1988,17,123,"Khmeleva et. al., 2000",Gauging Station measurements
+Abhazia,РђРЅР°С…РѕРјСЃС‚Р°,РЈСЃС‚СЊРµ,43.35901944,40.11850278,15.5,290,NA,NA,0.805,"Khmeleva et. al., 2000",Gauging Station measurements
+Abhazia,Р§РёРіРёСЂРёРїС€,РЈСЃС‚СЊРµ,43.33828889,40.17083611,6.7,290,NA,NA,0.322,"Khmeleva et. al., 2000",Gauging Station measurements
+Georgia,Р§РѕСЂРѕС…Рё,Р­СЂРіРµ,41.55,41.7,22000,360,NA,20,,"Dedkov & Mozherin, 1984",
+Georgia,РђРґР¶Р°СЂРёСЃС†РєР°Р»Рё,РљРµРґР°,41.6,41.95,1360,420,NA,7,,"Dedkov & Mozherin, 1984",
+Georgia,РђРґР¶Р°СЂРёСЃС†РєР°Р»Рё,РҐСѓР»Рѕ,41.63933333,42.31684167,251,1500,NA,20,,"Dedkov & Mozherin, 1984",
+Georgia,РђР±Р°РЅРѕСЃС†С…Р°Р»Рё,РњР°С…РёРґР¶Р°СѓСЂРё,41.67733889,41.70060556,3.9,150,NA,10,,"Dedkov & Mozherin, 1984",
+Georgia,РљРёРЅС‚СЂРёС€Рё,РљРѕС…Рё,41.80145556,41.89392222,191,59,NA,12,,"Dedkov & Mozherin, 1984",
+Georgia,Р§Р°РєРІРёСЃС†С…Р°Р»Рё,РҐР°Р»Р°,41.70736667,41.78955,120,72,NA,11,,"Dedkov & Mozherin, 1984",
+Georgia,РќР°С‚Р°РЅРµР±Рё,РќР°С‚Р°РЅРµР±Рё,41.91590833,41.80944444,469,130,NA,12,,"Dedkov & Mozherin, 1984",
+Georgia,РЎСѓРїСЃР°,РҐРёРґРјР°РіР°Р»Р°,42.03670833,41.79700556,1100,170,NA,15,,"Dedkov & Mozherin, 1984",
+Georgia,РЎСѓРїСЃР°,Р§РѕС…Р°С‚Р°СѓСЂРё,42.011275,42.236625,316,94,NA,10,,"Dedkov & Mozherin, 1984",
+Georgia,Р“Р°Р±Р°Р·РµСѓР»Рё,РҐРёРґРёСЃС‚Р°РІРё,41.97254167,42.21067222,337,170,NA,28,,"Dedkov & Mozherin, 1984",
+Georgia,Р РёРѕРЅРё,РљСѓС‚Р°РёСЃРё,42.247725,42.70117778,3540,890,NA,6,,"Dedkov & Mozherin, 1984",
+Georgia,Р РёРѕРЅРё,РђР»РїР°РЅР°,42.56384444,42.84733889,2830,410,NA,9,,"Dedkov & Mozherin, 1984",
+Georgia,Р РёРѕРЅРё,РќР°РјРѕС…РІР°РЅРё,42.41648056,42.69953611,3450,670,NA,29,,"Dedkov & Mozherin, 1984",
+Georgia,Р РёРѕРЅРё,РћРЅРё,42.58172778,43.43191111,1060,230,NA,7,,"Dedkov & Mozherin, 1984",
+Georgia,Р РёРѕРЅРё,РЈС†РµСЂР°,42.63618056,43.545425,707,500,NA,10,,"Dedkov & Mozherin, 1984",
+Georgia,Р РёРѕРЅРё,Р“РµР±Рё,42.76815278,43.50390278,222,440,NA,5,,"Dedkov & Mozherin, 1984",
+Georgia,РЁР°СЂР°СѓР»Р°,РЈРґР°Р±РЅРѕ,41.50813611,45.37478889,136,88,NA,6,,"Dedkov & Mozherin, 1984",
+Georgia,Р›Р°СЏРЅСѓСЂР°,РћСЂР±РµР»Рё,42.63333333,42.83333333,231,130,NA,16,,"Dedkov & Mozherin, 1984",
+Georgia,РљРІРёСЂРёР»Р°,РќР°С…С€РёСЂРіРµР»Рё,42.20666944,42.81678056,3230,630,NA,9,,"Dedkov & Mozherin, 1984",
+Georgia,РљРІРёСЂРёР»Р°,Р—Р°СЃС‚Р°С„РѕРЅРё,42.10300556,43.03156944,2490,680,NA,11,,"Dedkov & Mozherin, 1984",
+Georgia,Р”Р·РёСЂСѓР»Рё,Р¦РµРІР°,42.09362222,43.12925556,1190,160,NA,11,,"Dedkov & Mozherin, 1984",
+Georgia,РҐР°РЅРёСЃС‚СЃРєР°Р»Рё,Р”РёРґРІРµР»Р°,42.13228611,42.78001667,907,130,NA,9,,"Dedkov & Mozherin, 1984",
+Georgia,РўСЃРєС…РµРЅРёСЃС‚СЃРєР°Р»Рё,РҐРёРґРё,42.41750556,42.48135556,1950,270,NA,18,,"Dedkov & Mozherin, 1984",
+Georgia,РўСЃРєС…РµРЅРёСЃС‚СЃРєР°Р»Рё,Р—СѓР±Рё,42.56691944,42.6853,1700,1100,NA,11,,"Dedkov & Mozherin, 1984",
+Georgia,РўСЃРєС…РµРЅРёСЃС‚СЃРєР°Р»Рё,Р С†С…РјРµР»СѓСЂРё,42.68491389,42.77068611,1450,870,NA,13,,"Dedkov & Mozherin, 1984",
+Georgia,РўСЃРєС…РµРЅРёСЃС‚СЃРєР°Р»Рё,РќР°РіРѕРјР°СЂРё,42.66894722,42.76952778,1450,1200,NA,11,,"Dedkov & Mozherin, 1984",
+Georgia,РўСЃРєС…РµРЅРёСЃС‚СЃРєР°Р»Рё,Р›СѓРґР¶Рё,42.82183056,42.95602222,506,400,NA,2,,"Dedkov & Mozherin, 1984",
+Georgia,РўРµРєС…РµСЂРё,РќР°РєР°Р»Р°РєРµ,42.36676667,42.19566111,558,380,NA,7,,"Dedkov & Mozherin, 1984",
+Georgia,РРЅРіСѓСЂРё,РђРЅР°РєР»РёСЏ,42.40475833,41.57193611,4040,470,NA,12,,"Dedkov & Mozherin, 1984",
+Georgia,РРЅРіСѓСЂРё,Р”Р°СЂС‡РµР»Рё,42.42958889,41.662525,3640,680,NA,18,,"Dedkov & Mozherin, 1984",
+Georgia,РРЅРіСѓСЂРё,Р”Р¶РІР°СЂРё,42.72176111,42.03138056,3170,580,NA,7,,"Dedkov & Mozherin, 1984",
+Georgia,РРЅРіСѓСЂРё,РҐР°РёС€Рё,42.94546111,42.1844,2780,270,NA,10,,"Dedkov & Mozherin, 1984",
+Georgia,РРЅРіСѓСЂРё,Р”РёР·Рё,43.03760556,42.34795,1760,550,NA,19,,"Dedkov & Mozherin, 1984",
+Georgia,Р”РѕР»СЂР°,Р‘РµС‡Рѕ,43.03358889,42.58480556,146,320,NA,8,,"Dedkov & Mozherin, 1984",
+Georgia,Р‘. Р­СЂРёСЃС‚СЃРєР°Р»Рё,Р РµС‡РєС…Рё,42.65232222,41.76360833,163,310,NA,8,,"Dedkov & Mozherin, 1984",
+Abhazia,РљРѕРґРѕСЂРё,Р’Р°СЂС‡Р°,42.83165278,41.15525833,2020,410,NA,9,,"Dedkov & Mozherin, 1984",
+Abhazia,РљРѕРґРѕСЂРё,Р›Р°С‚Р°,43.03053333,41.48016944,1420,400,NA,10,,"Dedkov & Mozherin, 1984",
+Abhazia,Р“СѓРјРёСЃС‚Р°,РђС‡Р°РґР°СЂР°,43.04068056,40.968875,556,170,NA,10,,"Dedkov & Mozherin, 1984",

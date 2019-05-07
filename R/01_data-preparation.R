@@ -24,7 +24,7 @@ rm(list = ls())
 source("R/00_own-functions.R")
 
 # 1) Load database ------------------------------------------------------------
-sy <- read.csv("data/raw/sy_caucasus.csv", header = T, sep = ",")
+sy <- read.csv("data/raw/sy_caucasus.csv", header = T, sep = ",", encoding = "UTF-8")
 
 sy %>% 
   mutate(Country = as.character(Country),
