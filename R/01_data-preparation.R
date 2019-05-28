@@ -14,6 +14,7 @@ library(outliers)
 library(elevatr)
 library(sf)
 library(raster)
+library(XLConnect)
 
 Sys.setlocale("LC_ALL", "Russian_Russia")
 
@@ -64,12 +65,14 @@ sy <- st_intersection(sy, caucasus)
 sy %>% 
   as_tibble() %>% 
   mutate(area_g = cut(Catchment_area,
-                      breaks = c(0, 1000, 5000,
-                                 10000, 15000, Inf),
-                      labels = c("<1000", "1000-5000", "5000-10000",
-                                 "10000-15000", ">15000"))) %>% 
+                      breaks = c(0, 100, 1000,
+                                 10000, Inf),
+                      labels = c("<100", "100-1000", "1000-10000",
+                                  ">10000"))) %>% 
   group_by(area_g) %>% 
   summarise(n = n()) -> sy_area_table
+
+skimr::skim(sy)
 
 sy %>% 
   as_tibble() %>% 
@@ -258,7 +261,7 @@ caucasus_book <- loadWorkbook("analysis/summary_caucasus.xlsx", create = T)
 # Subset summary
 createSheet(caucasus_book, "Database summary")
 writeWorksheet(object = caucasus_book,
-               data = cbind(sy_area_table, sy_source_table),
+               data = sy_source_table,
                sheet = "Database summary")
 
 saveWorkbook(object = caucasus_book, file = "analysis/summary_caucasus.xlsx")
