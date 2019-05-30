@@ -40,7 +40,9 @@ rbind(
   caucasus_kknn_validate %>% mutate(model = "KNN"),
   caucasus_krige_validate %>% mutate(model = "OK"),
   caucasus_kknn_h_validate %>% mutate(model = "KNN-h"),
-  caucasus_cokrige_validate %>% mutate(model = "CK")
+  caucasus_cokrige_validate %>% mutate(model = "CK-h"),
+  caucasus_kknn_mlr_validate %>% mutate(model = "KNN-mlr"),
+  caucasus_cokrige_mlr_validate %>% mutate(model = "CK-mlr")
 ) %>% 
   mutate(type = case_when(
     type == "train" ~ "train",
@@ -49,7 +51,8 @@ rbind(
 
 caucasus_ssy_models %<>%
   dplyr::select(8, 1:ncol(.)) %>% 
-  mutate_if(is.numeric, list(~signif(., 2)))
+  mutate_if(is.numeric, list(~signif(., 2))) %>% 
+  dplyr::select(-KGE)
 
 # Export to EXCEL
 caucasus_book <- XLConnect::loadWorkbook("analysis/summary_caucasus.xlsx")

@@ -45,8 +45,6 @@ grid %>%
 
 grid_h <- grid_h[[1]]
 
-grid_h <- st_as_sf(grid_h)
-
 # Calculate Mean Local Relief
 # according to Montgomery and Brandon, 2002
 # Mean Local Relief (MLR) — is the he di¡erence between the minimum and
@@ -86,7 +84,6 @@ hc_result <- data.frame(sy = as.numeric(NA),
 # run KKNN
 k <- 12
 kernel <- "triangular"
-
 
 hc_kknn <- kknn::kknn(sy ~ ., 
                       train = hc_train, 
@@ -149,7 +146,7 @@ bind_rows(hc_train %>% mutate(type = "train"),
   facet_wrap(~type, labeller = labeller(
     type = c(train = "Модель",
              validate = "Валидация")
-  )) -> caucasus_kknn_h_validate_graph
+  )) -> caucasus_kknn_mlr_validate_graph
 
 bind_rows(hc_train %>% mutate(type = "train"),
           hc_test %>% mutate(type = "validate")) %>% 
@@ -163,7 +160,7 @@ bind_rows(hc_train %>% mutate(type = "train"),
             r = cor(sy_pred, sy,
                     method = "spearman",
                     use = "pairwise.complete.obs")) %>% 
-  mutate_if(is.numeric, list(~signif(.,3))) -> caucasus_kknn_h_validate
+  mutate_if(is.numeric, list(~signif(.,3))) -> caucasus_kknn_mlr_validate
 
 # 4) Vizualise ---------------------------------------------------------------
 # !
@@ -226,32 +223,24 @@ ggplot() +
                                              title.hjust = 0.5,
                                              label.hjust = 1)) +
   theme_map() +
-  theme(legend.position = "bottom") -> ssy_caucasus_kknn_h
+  theme(legend.position = "bottom") -> ssy_caucasus_kknn_mlr
 
 # SAVE -----------------------------------------------------------------------
 # Figures
-ggsave("figures/3-15_ssy_caucasus_kknn_h.png",
-       plot = ssy_caucasus_kknn_h,
+ggsave("figures/3-15_ssy_caucasus_kknn_mlr.png",
+       plot = ssy_caucasus_kknn_mlr,
        dpi = 500, w = 8, h = 6)
 
-ggsave("figures/3-14_caucasus_kknn_h_validate_graph.png",
-       plot = caucasus_kknn_h_validate_graph,
+ggsave("figures/3-14_caucasus_kknn_mlr_validate_graph.png",
+       plot = caucasus_kknn_mlr_validate_graph,
        dpi = 500, w = 6, h = 4)
 
 # Tables
 load("data/tidy/model_validate.Rdata")
 save(caucasus_kknn_validate, caucasus_krige_validate,
-     caucasus_kknn_h_validate,
+     caucasus_kknn_h_validate, caucasus_kknn_mlr_validate,
      file = "data/tidy/model_validate.Rdata")
 
 # Temporary data
 save(hc_raster, sy_h,
-     file = "data/spatial/kknn-h_raster.Rdata")
-
-# Write raster
-raster::rasterFromXYZ(dplyr::select(hc_result,
-                                    x = lon,
-                                    y = lat,
-                                    sy) %>% mutate(sy = 10^sy),
-                      crs = projection(sy_h)) %>% 
-  raster::writeRaster(x = ., filename = "data/spatial/knn-h", overwrite = T)
+     file = "data/spatial/kknn-mlr_raster.Rdata")

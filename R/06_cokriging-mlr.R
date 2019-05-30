@@ -31,7 +31,7 @@ rm(list = ls())
 # Load
 source("R/00_own-functions.R")
 load("data/spatial/sy_10-caucasus-spatial.Rdata")
-load("data/spatial/kknn-h_raster.Rdata")
+load("data/spatial/kknn-mlr_raster.Rdata")
 
 # 1) Sub-sample ----------------------------------------------------------------
 # Create validation and modeling dataset 
@@ -39,14 +39,14 @@ set.seed(125)
 
 sample_row <- sample(nrow(sy_h), 40)
 sy_m <- data.frame(sy = sy_h$sy[-sample_row],
-                       h = sy_h$elevation[-sample_row],
-                       lon = st_coordinates(sy_h)[-sample_row, 1], 
-                       lat = st_coordinates(sy_h)[-sample_row, 2])
+                   mlr = sy_h$mlr[-sample_row],
+                   lon = st_coordinates(sy_h)[-sample_row, 1], 
+                   lat = st_coordinates(sy_h)[-sample_row, 2])
 
 sy_val <- data.frame(sy = sy_h$sy[sample_row],
-                      h = sy_h$elevation[sample_row],
-                      lon = st_coordinates(sy_h)[sample_row, 1], 
-                      lat = st_coordinates(sy_h)[sample_row, 2])
+                     mlr = sy_h$mlr[sample_row],
+                     lon = st_coordinates(sy_h)[sample_row, 1], 
+                     lat = st_coordinates(sy_h)[sample_row, 2])
 
 # Converting to spatial objects
 coordinates(sy_m) <- ~ lon + lat
@@ -58,19 +58,19 @@ projection(sy_val) <- projection(sy)
 grid <- as(hc_raster[,-1], "Spatial")
 
 # 2) Cross-validation -----------------------------------------------------------
-exp_var <- autofitVariogram(sy ~ h,
+exp_var <- autofitVariogram(sy ~ mlr,
                             input_data = sy_m, model = "Exp")
-lin_var <- autofitVariogram(sy ~ h,
+lin_var <- autofitVariogram(sy ~ mlr,
                             input_data = sy_m, model = "Lin")
-sph_var <- autofitVariogram(sy ~ h,
+sph_var <- autofitVariogram(sy ~ mlr,
                             input_data = sy_m, model = "Sph")
-gau_var <- autofitVariogram(sy ~ h,
+gau_var <- autofitVariogram(sy ~ mlr,
                             input_data = sy_m, model = "Gau")
 
 # Function for model errors calculation
 kriging_coval <- function(var_model){
   
-  krige.cv(sy ~ h, sy_m,
+  krige.cv(sy ~ mlr, sy_m,
            model = var_model$var_model,
            nfold = nrow(sy_m),
            verbose = FALSE) %>% 
@@ -91,11 +91,11 @@ cbind(model = c("Exp", "Lin", "Sph", "Gau"),
   mutate(type = "Co-kriging") -> cokrig_variograms
 
 # 3) Co-kriging ------------------------------------------------------------
-cok_auto <- autoKrige(sy ~ h, input_data = sy_m,
-                      new_data = grid, model = "Sph")
+cok_auto <- autoKrige(sy ~ mlr, input_data = sy_m,
+                      new_data = grid, model = "Exp")
 
 # Export Variogram
-cok_var <- sph_var
+cok_var <- exp_var
 
 cok_var$exp_var %>% 
   ggplot(aes(x = dist, y = gamma)) +
@@ -180,7 +180,7 @@ bind_rows(as_tibble(sy_m) %>% mutate(type = "train"),
   facet_wrap(~type, labeller = labeller(
     type = c(train = "Модель",
              validate = "Валидация")
-  )) -> caucasus_cokrige_validate_graph
+  )) -> caucasus_cokrige_mlr_validate_graph
 
 bind_rows(as_tibble(sy_m) %>% mutate(type = "train"),
           as_tibble(sy_val) %>% mutate(type = "validate")) %>%
@@ -194,7 +194,7 @@ bind_rows(as_tibble(sy_m) %>% mutate(type = "train"),
             r = cor(sy_pred, sy,
                     method = "spearman",
                     use = "pairwise.complete.obs")) %>% 
-  mutate_if(is.numeric, list(~signif(.,3))) -> caucasus_cokrige_validate
+  mutate_if(is.numeric, list(~signif(.,3))) -> caucasus_cokrige_mlr_validate
 
 # 5) Plot --------------------------------------------------------------------
 cokrig_result <- st_as_sf(cok_auto$krige_output, 
@@ -263,35 +263,26 @@ ggplot() +
                                              title.hjust = 0.5,
                                              label.hjust = 1)) +
   theme_map() +
-  theme(legend.position = "bottom") -> ssy_caucasus_cokrig
+  theme(legend.position = "bottom") -> ssy_caucasus_cokrig_mlr
 
 # SAVE ------------------------------------------------------------------------
 # Figures
-ggsave("figures/3-16_ssy_caucasus_cokrig.png",
-       plot = ssy_caucasus_cokrig,
+ggsave("figures/3-16_ssy_caucasus_cokrig_mlr.png",
+       plot = ssy_caucasus_cokrig_mlr,
        dpi = 500, w = 8, h = 6)
 
-ggsave("figures/3-15_caucasus_cokrige_validate_graph.png",
-       plot = caucasus_cokrige_validate_graph,
+ggsave("figures/3-15_caucasus_cokrige_mlr_validate_graph.png",
+       plot = caucasus_cokrige_mlr_validate_graph,
        dpi = 500, w = 6, h = 4)
 
-ggsave("figures/3-14_geom_variog_cok.png",
+ggsave("figures/3-14_geom_variog_cok-mlr.png",
        plot = geom_variog_cok,
        dpi = 500, w = 7, h = 4)
-
-
-# Export to EXCEL
-caucasus_book <- XLConnect::loadWorkbook("analysis/summary_caucasus.xlsx")
-XLConnect::createSheet(caucasus_book, "Co-Kriging variograms")
-XLConnect::writeWorksheet(object = caucasus_book,
-                          data = cokrig_variograms,
-                          sheet = "Co-Kriging variograms")
-XLConnect::saveWorkbook(object = caucasus_book, file = "analysis/summary_caucasus.xlsx")
-
 
 # Tables
 load("data/tidy/model_validate.Rdata")
 save(caucasus_kknn_validate, caucasus_krige_validate,
      caucasus_kknn_h_validate, caucasus_kknn_mlr_validate,
      caucasus_cokrige_validate,
+     caucasus_cokrige_mlr_validate,
      file = "data/tidy/model_validate.Rdata")

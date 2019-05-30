@@ -21,6 +21,7 @@ library(sabre)
 library(rnaturalearth)
 library(elevatr)
 library(cowplot)
+library(glue)
 
 Sys.setlocale("LC_ALL", "Russian_Russia")
 
@@ -79,6 +80,28 @@ hc_raster %>%
   # income value
   left_join(bivariate_color_scale, by = "group") -> tt
 
+sy_h %>% 
+  mutate(sy = 10^sy,
+         sy_quantiles = cut(sy,
+                            breaks = quantiles_sy,
+                            include.lowest = TRUE),
+         h_quantiles = cut(elevation,
+                           breaks = quantiles_h,
+                           include.lowest = TRUE),
+         # by pasting the factors together as numbers we match the groups defined
+         # in the tibble bivariate_color_scale
+         group = paste(as.numeric(sy_quantiles),
+                       "-",
+                       as.numeric(h_quantiles))) %>% 
+  # we now join the actual hex values per "group"
+  # so each municipality knows its hex value based on the his gini and avg
+  # income value
+  left_join(bivariate_color_scale, by = "group") -> sy_sy
+
+sy_sy %<>% 
+  mutate(lon = st_coordinates(.)[, 1], 
+         lat = st_coordinates(.)[, 2])
+
 ggplot() +
   # add raster geom for the knn result
   geom_raster(data = tt,
@@ -87,6 +110,12 @@ ggplot() +
   geom_sf(data = caucasus, color = "gray60", fill = NA, size = .6) +
   # add coastline
   geom_sf(data = coast, colour = "gray60", fill = NA, size = .6) +
+  # add points
+  geom_sf(data = sy_sy,
+          aes(x = lon, y = lat, fill = fill),
+          color = "white",
+          shape = 21,
+          size = 2) +
   # add annotations
   annotate("text", x = -64055, y = 4786418,
            # label = expression(italic("Черное море")),
@@ -123,7 +152,8 @@ annotations <- tibble(
   # ),
   arrow_from = c(
     "732188,4200904", # grey
-    "264049,4351782", # blue
+    # "264049,4351782", # blue
+    "364441,4290642", # blue
     "267077,4963366", # violet
     "791291,4864285" # red
   ),
@@ -228,20 +258,32 @@ ggplot() +
   #                 " до ", prettyNum(round(range(quantiles_sy))[2], big.mark = " "),
   #                 " т/км"),
   #      y = paste0("Высота ⟶️\nот 0 до 5642 мБС")) +
-  labs(x = paste0("SSY ⟶️\nfrom ",round(range(quantiles_sy))[1],
-                  " to ", prettyNum(round(range(quantiles_sy))[2], big.mark = " "),
-                  " t/km"),
-       y = paste0("Elevation ⟶️\nfrom 0 to 5642 m. asl")) +
-  # labs(x = "Higher SSY ⟶️",
-  #      y = "Higher Elevation ⟶️") +
+  # labs(x = paste0("SSY ⟶️\nfrom ",round(range(quantiles_sy))[1],
+  #                 " to ", prettyNum(round(range(quantiles_sy))[2], big.mark = " "),
+  #                 " t/km"),
+  #      y = paste0("Elevation ⟶️\nfrom 0 to 5642 m. asl")) +
+  labs(x = expression("SSY, "*t%.%km^"-2"%.%year^"-1"),
+       y = "Elevation, m") +
+  scale_x_continuous(breaks = c(1:3),
+                     labels = c(
+                       glue("{round(quantiles_sy[1], 1)} - {round(quantiles_sy[2], 0)}"),
+                       glue("{round(quantiles_sy[2], 0)} - {round(quantiles_sy[3], 0)}"),
+                       glue("{round(quantiles_sy[3], 0)} - {(round(quantiles_sy[4], 0))}")
+                     )) +
+  scale_y_continuous(breaks = c(1:3),
+                     labels = c(
+                       glue("{round(quantiles_h[1], 1)} - {round(quantiles_h[2], 0)}"),
+                       glue("{round(quantiles_h[2], 0)} - {round(quantiles_h[3], 0)}"),
+                       glue("{round(quantiles_h[3], 0)} - {(round(quantiles_h[4], 0))}")
+                     )) +
   theme_map() +
   # make font small enough
   theme(axis.title.x = element_text(size = 8),
         axis.title.y = element_text(size = 8,
                                     angle = 90),
         panel.grid.major = element_blank(),
-        axis.text.x = element_blank(),
-        axis.text.y = element_blank(),
+        axis.text.x = element_text(vjust = 3),
+        axis.text.y = element_text(angle = 90, hjust = .5, vjust = -2),
         plot.background = element_blank()) +
   # quadratic tiles
   coord_fixed() -> legend
@@ -249,7 +291,7 @@ ggplot() +
 # Combine plots
 ggdraw() +
   draw_plot(map, 0, 0, 1, 1) +
-  draw_plot(legend, 0.06, 0.07, 0.3, 0.3) -> ssy_caucasus_bivariate
+  draw_plot(legend, 0.02, 0.07, 0.45, 0.45) -> ssy_caucasus_bivariate
 
 # SAVE -----------------------------------------------------------------------
 ggsave("figures/3-XX_ssy_caucasus_bivariate.png",

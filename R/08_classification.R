@@ -43,6 +43,13 @@ mozh <- st_read("/Users/ATSYPLENKOV/Dropbox/02_Cтатьи/2018/SY EUROPE/Mounta
   # repair topology
   st_buffer(., dist = 0)
 
+mozh %<>% 
+  mutate(class = case_when(
+    id == 6 ~ "<0.025",
+    id == 7 ~ "0.025 - 0.1",
+    id == 8 ~ "0.1 - 0.25",
+    id == 9 ~ "> 0.25"
+  ))
 
 
 # 4) Classification ----------------------------------------------------------
@@ -102,14 +109,14 @@ ggplot() +
               aes(x = lon, y = lat, fill = class, alpha = prob)) +
   # add coastline
   geom_sf(data = coast, colour = "gray60", fill = NA, size = .6) +
-  # add Mozherin borders
-  geom_sf(data = mozh, aes(color = "black"), size = .4, fill = NA) +
+  # # add Mozherin borders
+  # geom_sf(data = mozh, aes(color = "black"), size = .4, fill = NA) +
   # add annotations
   annotate("text", x = -64055, y = 4786418,
            # label = expression(italic("Черное море")),
            label = expression(italic("Black Sea")),
            color = "gray80", size = 6, angle = -30) +
-  annotate("text", x = 919866, y = 4609282,
+  annotate("text", x = 840822, y = 4685222,
            label = expression(italic("Caspian Sea")),
            color = "gray80", size = 6, angle = -55) +
   # add training points
@@ -124,7 +131,7 @@ ggplot() +
   # add fancy legend
   # https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/
   scale_fill_viridis(option = "E",
-                     name = expression("Denudation rate"*","*~mm%.%y^"-1"),
+                     name = expression("Denudation rate"*","*~mm%.%year^"-1"),
                      # name = expression("Годичный слой денудации"*","*~"мм"%.%"год"^"-1"),
                      discrete = T,
                      direction = -1,
@@ -140,15 +147,70 @@ ggplot() +
                        reverse = F,
                        label.position = "bottom"
                      )) +
-  scale_color_manual(name = "",
-                     values = "black",
-                     # labels = "границы областей равной денудации по \n [Мозжерин, Шарифуллин, 2014]",
-                     labels = "Denudation rate areas\naccording to (Mozzherin and Sharifullin, 2015)",
-                     guide = guide_legend(title.position = 'top',
-                                          # title.hjust = 0.5,
-                                          label.hjust = 1)) +
+  # scale_color_manual(name = "",
+  #                    values = "black",
+  #                    # labels = "границы областей равной денудации по \n [Мозжерин, Шарифуллин, 2014]",
+  #                    labels = "Denudation rate areas\naccording to (Mozzherin and Sharifullin, 2015)",
+  #                    guide = guide_legend(title.position = 'top',
+  #                                         # title.hjust = 0.5,
+  #                                         label.hjust = 1)) +
+  labs(title = "This study") +
   theme_map() +
   theme(legend.position = "bottom") -> hc_caucasus_classes
+
+ggplot() +
+  # add coastline
+  geom_sf(data = coast, colour = "gray60", fill = NA, size = .6) +
+  # add Mozherin borders
+  geom_sf(data = mozh, aes(fill = class),
+          color = "black",
+          alpha = .7,
+          size = .4) +
+  # add annotations
+  annotate("text", x = -64055, y = 4786418,
+           # label = expression(italic("Черное море")),
+           label = expression(italic("Black Sea")),
+           color = "gray80", size = 6, angle = -30) +
+  annotate("text", x = 840822, y = 4685222,
+           label = expression(italic("Caspian Sea")),
+           color = "gray80", size = 6, angle = -55) +
+  # add training points
+  # geom_point(data = hc_train,
+  #            aes(x = lon, y = lat),
+  #            color = "black",
+  #            fill = "white",
+  #            shape = 21,
+  #            size = 2) +
+  # remove propability legend
+  scale_alpha_continuous(guide = F) +
+  # add fancy legend
+  # https://timogrossenbacher.ch/2016/12/beautiful-thematic-maps-with-ggplot2-only/
+  scale_fill_viridis(option = "E",
+                     name = expression("Denudation rate"*","*~mm%.%year^"-1"),
+                     # name = expression("Годичный слой денудации"*","*~"мм"%.%"год"^"-1"),
+                     discrete = T,
+                     direction = -1,
+                     guide = guide_legend(
+                       direction = "horizontal",
+                       keyheight = unit(2, units = "mm"),
+                       keywidth = unit(80 / length(labels), units = "mm"),
+                       title.position = 'top',
+                       title.hjust = 0.5,
+                       label.hjust = 1,
+                       nrow = 1,
+                       byrow = T,
+                       reverse = F,
+                       label.position = "bottom"
+                     )) +
+  labs(title = "Based on Mozzherin & Sharfullin (2015)") +
+  theme_map() +
+  theme(legend.position = "bottom") -> hc_caucasus_mozh
+
+ggsave(plot = ggarrange(hc_caucasus_classes, hc_caucasus_mozh, ncol = 2,
+                        common.legend = T, legend = "bottom"),
+       filename = "figures/20_sy-caucasus-classes_PIAHS.png",
+       dpi = 500, w = 12, h = 6
+)
 
 # 6) Compare ------------------------------------------------------------------
 # Reclass previous maps

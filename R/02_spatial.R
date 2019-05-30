@@ -108,6 +108,17 @@ rbind(
               mean = mean(sy) %>% signif(3),
               median = median(sy),
               sd = signif(sd(sy), 2),
+              se = (sd(sy) / sqrt(length(sy))) %>% signif(3)),
+  sy %>% 
+    as_tibble() %>% 
+    mutate(sy = 10^sy) %>% 
+    summarise(subset = "total",
+              n = n(),
+              min = min(sy) %>% signif(3),
+              max = max(sy),
+              mean = mean(sy) %>% signif(3),
+              median = median(sy),
+              sd = signif(sd(sy), 2),
               se = (sd(sy) / sqrt(length(sy))) %>% signif(3))) %>% 
   mutate_if(is.numeric, list(~signif(.,3))) %>% 
   mutate_if(is.numeric, list(~prettyNum(., big.mark = " "))) -> sy_caucasus_subsamples
@@ -178,31 +189,6 @@ ggarrange(ggarrange(eda_boxplot, eda_histogram,
 
 # Levene test
 car::leveneTest(sy_clean$sy, as_factor(sy_clean$type))
-
-# Mean Local Relief ---------------------------------------------------------
-grid10 <- st_make_grid(caucasus, cellsize = 5000, what = "centers") %>% 
-  st_intersection(., caucasus)
-
-grid10 %>% 
-  as_Spatial() %>% 
-  elevatr::get_aws_points() -> grid10h
-
-grid10h <- grid10h[[1]]
-
-library(rgeos)
-library(sp)
-
-grid10h %>% 
-  st_as_sf() %>% 
-  st_buffer(10000) -> pointsBuffer_T
-
-pointsBuffer <- pointsBuffer[,-1]
-
-pointsBuffer$max <- over(as_Spatial(pointsBuffer), grid10h, fn = max)
-pointsBuffer$min <- over(as_Spatial(pointsBuffer), grid10h, fn = min)
-
-pointsBuffer %>% 
-  as_tibble()
 
 # Save ----------------------------------------------------------------------
 save(sy, grid, caucasus, coast,

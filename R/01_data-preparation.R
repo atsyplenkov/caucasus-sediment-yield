@@ -80,6 +80,10 @@ sy %>%
   summarise(n = n(),
             Source = paste(unique(Source_data), collapse = ";")) -> sy_source_table
 
+sy %>% 
+  filter(Country == "Russia") %>% 
+  get_years(.,"Measuring_period") %>% nrow()
+
 # 2) MP length analysis -----------------------------------------------------
 # Histogram of MP length
 sy %>%
@@ -103,56 +107,59 @@ sy %>%
   theme_clean() -> sy_mp
 
 # Plot year availibility
-sy %>% 
-  as_tibble() %>% 
-  separate(Measuring_period, c("year1", "year2", "year3"), ",") %>% 
-  mutate(
-    year1 = str_replace_all(year1, pattern = "-", replacement = ":"),
-    year2 = str_replace_all(year2, pattern = "-", replacement = ":"),
-    year3 = str_replace_all(year3, pattern = "-", replacement = ":")
-  ) -> year
+get_years <- function(z, MP = NULL){
+  
+  z %>% 
+    as_tibble() %>% 
+    separate(MP, c("year1", "year2", "year3"), ",") %>% 
+    mutate(
+      year1 = str_replace_all(year1, pattern = "-", replacement = ":"),
+      year2 = str_replace_all(year2, pattern = "-", replacement = ":"),
+      year3 = str_replace_all(year3, pattern = "-", replacement = ":")
+    ) -> year
+  
+  year %>% 
+    filter(str_detect(year1, "<")) %>% 
+    dplyr::select(year1, MP_length) %>% 
+    mutate(year1 = str_replace_all(year1, pattern = "<", replacement = ""),
+           year1 = as.numeric(year1),
+           year4 = year1 - MP_length,
+           year4 = glue::glue("{year4}:{year1}")) %>%
+    dplyr::select(year4) -> year4
+  
+  year %>% 
+    filter(!is.na(year2)) %>% 
+    dplyr::select(year2) -> year2
+  
+  year %>% 
+    filter(!is.na(year3)) %>% 
+    dplyr::select(year3) -> year3
+  
+  year %>% 
+    filter(!str_detect(year1, "<")) %>% 
+    dplyr::select(year1) -> year1
+  
+  year <- c(as.vector(t(year1)),
+            as.vector(t(year2)),
+            as.vector(t(year3)),
+            as.vector(t(year4))) %>% 
+    strsplit(., ":") %>% 
+    lapply(as.numeric) %>% 
+    lapply(function(x) {
+      if (length(x) == 2) {
+        seq(x[1], x[2], 1)
+      } else {
+        x
+      }
+    }) %>% 
+    unlist() %>%
+    tibble() %>% 
+    magrittr::set_colnames(c("year"))
+  
+  return(year)
+}
 
-year %>% 
-  filter(str_detect(year1, "<")) %>% 
-  dplyr::select(year1, MP_length) %>% 
-  mutate(year1 = str_replace_all(year1, pattern = "<", replacement = ""),
-         year1 = as.numeric(year1),
-         year4 = year1 - MP_length,
-         year4 = glue::glue("{year4}:{year1}")) %>%
-  dplyr::select(year4) -> year4
-
-year %>% 
-  filter(!is.na(year2)) %>% 
-  dplyr::select(year2) -> year2
-
-year %>% 
-  filter(!is.na(year3)) %>% 
-  dplyr::select(year3) -> year3
-
-year %>% 
-  filter(!str_detect(year1, "<")) %>% 
-  dplyr::select(year1) -> year1
-
-year <- c(as.vector(t(year1)),
-          as.vector(t(year2)),
-          as.vector(t(year3)),
-          as.vector(t(year4))) %>% 
-  strsplit(., ":") %>% 
-  lapply(as.numeric) %>% 
-  lapply(function(x) {
-    if (length(x) == 2) {
-      seq(x[1], x[2], 1)
-    } else {
-      x
-    }
-  }) %>% 
-  unlist() %>%
-  data_frame() %>% 
-  magrittr::set_colnames(c("year"))
-
-rm(year1, year2, year3, year4)
-
-year %>%
+get_years(sy, "Measuring_period") %>%
   ggplot(aes(x = year)) +
   geom_histogram(fill = "#A91511",
                  color = "white",
@@ -206,7 +213,7 @@ sy %>%
   mutate(outlier.high = sy_log > quantile(sy_log, .75) + 1.50*IQR(sy_log),
          outlier.low = sy_log < quantile(sy_log, .25) - 1.50*IQR(sy_log),
          outlier.color = case_when(outlier.high ~ "red",
-                                   outlier.low ~ "steelblue",
+                                   outlier.low ~ "red",
                                    outlier.low == F | outlier.high == F ~ "black")) %>% 
   ungroup() %>% 
   ggplot(aes(x = "",
@@ -218,20 +225,86 @@ sy %>%
               width = .1,
               alpha = .6,
               show.legend = F) +
-  stat_summary(fun.data = n_fun,
-               geom = "text",
-               hjust = .5) +
+  # stat_summary(fun.data = n_fun,
+  #              geom = "text",
+  #              hjust = .5) +
   scale_y_log10(labels = fancyNumbers,
                 breaks = prettyLogs) +
   ggsci::scale_color_lancet() +
   xlab(label = NULL) +
-  ylab(expression(italic("log"[10])*"SSY,"*~"т"%.%"км"^-2)) +
-  ggpubr::theme_pubclean(base_family = "Ubuntu") -> sy_box
+  # ylab(expression(italic("log"[10])*"SSY,"*~"т"%.%"км"^-2)) +
+  ylab(expression(log[10]*italic(SSY))) +
+  theme_clean() -> sy_box
+
+sy %>% 
+  elevatr::get_aws_points() -> tt
+
+tt %>% 
+  pluck(1) %>% 
+  as_tibble() %>% 
+  dplyr::select(Station_name, A = Catchment_area, h = elevation) %>% 
+  mutate(A_log = log10(A)) %>% 
+  mutate(outlier.high = A_log > quantile(A_log, .75) + 1.50*IQR(A_log),
+         outlier.low = A_log < quantile(A_log, .25) - 1.50*IQR(A_log),
+         outlier.color = case_when(outlier.high ~ "red",
+                                   outlier.low ~ "red",
+                                   outlier.low == F | outlier.high == F ~ "black")) %>% 
+  ungroup() %>% 
+  ggplot(aes(x = "",
+             y = A)) +
+  stat_boxplot(geom ='errorbar',
+               width = .25) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(aes(color = outlier.color),
+              width = .1,
+              alpha = .6,
+              show.legend = F) +
+  scale_y_log10(labels = fancyNumbers,
+                breaks = prettyLogs) +
+  ggsci::scale_color_lancet(name = "",
+                            labels = c()) +
+  xlab(label = NULL) +
+  ylab(expression(log[10]*italic(A))) +
+  theme_clean() -> A_box
+
+tt %>% 
+  pluck(1) %>% 
+  as_tibble() %>% 
+  dplyr::select(Station_name, A = Catchment_area, h = elevation) %>% 
+  mutate(h_log = (h)) %>%
+  mutate(outlier.high = h_log > quantile(h_log, .75, na.rm = T) + 1.50*IQR(h_log, na.rm = T),
+         outlier.low = h_log < quantile(h_log, .25, na.rm = T) - 1.50*IQR(h_log, na.rm = T),
+         outlier.color = case_when(outlier.high ~ "red",
+                                   outlier.low ~ "steelblue",
+                                   outlier.low == F | outlier.high == F ~ "black")) %>%
+  ungroup() %>%
+  ggplot(aes(x = "",
+             y = h)) +
+  stat_boxplot(geom ='errorbar',
+               width = .25) +
+  geom_boxplot(outlier.shape = NA) +
+  geom_jitter(aes(color = outlier.color),
+              width = .1,
+              alpha = .6,
+              show.legend = F) +
+  ggsci::scale_color_lancet() +
+  scale_y_continuous(labels = function(...){prettyNum(..., big.mark = " ")}) +
+  xlab(label = NULL) +
+  ylab(expression(italic(H)*", m")) +
+  theme_clean()  -> H_box
 
 ggsave("figures/3-7_caucasus-sy_norm.png", 
        plot = ggpubr::ggarrange(sy_hist,
                                 sy_qq,
                                 sy_box,
+                                ncol = 3,
+                                labels = "AUTO"),
+       dpi = 500, width = 11, height = 4)
+
+ggsave("figures/3-7_caucasus-sy_explore.png", 
+       plot = ggpubr::ggarrange(sy_box,
+                                H_box,
+                                A_box,
                                 ncol = 3,
                                 labels = "AUTO"),
        dpi = 500, width = 11, height = 4)
