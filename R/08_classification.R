@@ -308,7 +308,6 @@ ggsave("figures/21_sy-caucasus-classes-area.png",
 # Optional: disable scientific notation
 options(scipen = 9999)
 
-# Calculate total SY of Caucasus
 sy %>% 
   as_tibble() %>%
   mutate(sy = 10^sy) %>%

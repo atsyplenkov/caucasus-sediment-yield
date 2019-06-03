@@ -171,11 +171,6 @@ get_years(sy, "Measuring_period") %>%
                      breaks = seq(1925, 2015, 10)) +
   scale_y_continuous(expand = c(0,0)) +
   labs(x = "Year",
-       # title = "Количество постов",
-       subtitle = paste0("Median year ",
-                         median(year$year, na.rm = T),
-                         ", n = ",
-                         tally(year)),
        y = "Count") +
   theme_clean() -> sy_year
 
@@ -217,7 +212,7 @@ sy %>%
                                    outlier.low == F | outlier.high == F ~ "black")) %>% 
   ungroup() %>% 
   ggplot(aes(x = "",
-             y = (sy))) +
+             y = sy)) +
   stat_boxplot(geom ='errorbar',
                width = .25) +
   geom_boxplot(outlier.shape = NA) +
@@ -233,7 +228,7 @@ sy %>%
   ggsci::scale_color_lancet() +
   xlab(label = NULL) +
   # ylab(expression(italic("log"[10])*"SSY,"*~"т"%.%"км"^-2)) +
-  ylab(expression(log[10]*italic(SSY))) +
+  ylab(expression(italic(SSY)*", t"%.%"km"^"-2"%.%"year"^"-1")) +
   theme_clean() -> sy_box
 
 sy %>% 
@@ -264,7 +259,7 @@ tt %>%
   ggsci::scale_color_lancet(name = "",
                             labels = c()) +
   xlab(label = NULL) +
-  ylab(expression(log[10]*italic(A))) +
+  ylab(expression(italic(A)*", km"^"2")) +
   theme_clean() -> A_box
 
 tt %>% 
